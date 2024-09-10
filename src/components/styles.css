@@ -46,3 +46,28 @@
   max-height: none; /* Hilangkan pembatasan tinggi maksimum */
   object-fit: contain; /* Menggunakan object-fit agar gambar tetap besar */
 }
+
+.bg-red-falcon{
+  background-color: #530202;
+}
+
+.bg-menyala-falcon{
+  background-color: #FF0000;
+}
+
+.text-type{
+  font-size: x-large;
+  color:#FF0000;
+}
+
+.text-color{
+  color: #FF0000;
+}
+
+.text-wite{
+  color: #ffffff;
+}
+
+.text-color-red{
+  color: #530202;
+}

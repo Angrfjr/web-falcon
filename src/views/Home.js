@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
 import ButtonLink from "../components/ButtonLink";
@@ -16,42 +16,44 @@ function Home() {
 
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
-          src="/image/Header_home.jpg"
-          alt="Fitnesswork Hero Page"
+          src="/image/falcon/bg-home-about.png"
+          alt="Falcon Hero Page"
           className="object-cover object-center min-w-min lg:min-w-full max-h-[80vh]"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/30"></div>
         <div className="container absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-md mx-auto text-white text-center">
           <img
-            src="./image/LogoFitnessworkPutih.png"
+            src="./image/falcon/logo-falcon-home-video.png"
             alt="Fitnessworks"
             className="w-full"
           />
           <p>
-            Fitnessworks is a new experience in fitness. We are the first Gym &
-            Fitness Centre with technology & time-based membership system, in
-            Indonesia. With technology we can provide high level facility &
-            activity with low-cost membership plan, so everyone can join & begin
-            their fitness journey. it is our mission to create fitness for
-            everyone.
+            Introducing Falcon Fitness Box, where science meets nightlife for an
+            unparalleled workout experience. Our cutting-edge fitness studio
+            leverages unique heart rate tracking technology to ensure you
+            achieve faster, safer results.
           </p>
-          <button className="border border-yellow-primary px-4 py-1 my-4">
-            VIEW MORE
-          </button>
+          <p>
+            Imagine breaking a sweat under dynamic lighting effects and
+            heart-pumping music, all set within a vibrant nightclub atmosphere.
+            Perfect for fitness enthusiasts and tech-savvy individuals alike,
+            our innovative approach not only makes working out effective but
+            also incredibly fun. Join us at Falcon Fitness Box to transform your
+            fitness journey with the perfect blend of science and excitement.
+          </p>
+          <button className="border  px-4 py-1 my-4">VIEW MORE</button>
         </div>
       </div>
       <div className="2xl:container bg-blue-primary px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
         <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
           <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
             <div className="container">
-              <p>
-                START NOW FOR FREE ! be a better version of you, NO EXCUSES !
-              </p>
+              <p>PRE-SALE STARTS OCTOBER 2024</p>
               {/* <p>Get your 3 days trial, get rid all your excuses, </p>
               <p>change now or never! Make better version of you with Fitnessworks.</p>
               <p>#fitnessforeveryone</p> */}
-              <div className="text-yellow-primary my-4">
-                <ButtonLink text="GET TRIAL" link="/form-free-trial" />
+              <div className="text-red-primary my-4">
+                <ButtonLink text="MORE INFO" link="/form-free-trial" />
               </div>
             </div>
           </div>
@@ -59,8 +61,8 @@ function Home() {
         <div className="relative">
           <div className="absolute h-full w-full bg-gradient-to-b md:bg-gradient-to-r from-blue-primary"></div>
           <img
-            src="/image/home/Slide2.jpg"
-            alt="FitnessWork"
+            src="./image/falcon/bg-home-presale.png"
+            alt="falcon"
             className="object-cover object-center w-full h-full md:ml-auto max-w-5xl"
           />
         </div>
@@ -437,12 +439,101 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="py-8">
         <div className="relative py-10 text-center text-blue-primary font-BebasNeue font-black">
           <h1 className="text-[10rem] opacity-20 py-8">SHOP</h1>
           <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
             <h1 className="text-5xl">PRICING PLAN</h1>
+          </div>
+        </div>
+        <div className="lg:flex justify-center">
+          <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
+            <div className="bg-menyala-falcon text-blue-primary text-center">
+              <h1 className="text-wite text-4xl py-4 font-BebasNeue tracking-wider">
+                PRESALE
+              </h1>
+            </div>
+            <div className="text-color-red bg-neutral-100 p-6">
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
+                FREE HEART RATE <br />
+                TRACKER (MYZONE)
+              </h1>
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
+                START FROM
+              </h1>
+              <div className="flex pb-4">
+                <p>RP</p>
+                <p className="text-4xl font-black mx-2">9.488.000</p>
+                <p className="mt-auto"> / 12 Month</p>
+              </div>
+              <div className="ml-8 text-lg py-4">
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Check in start
+                  from 06.00 WIB
+                </p>
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Free Access All
+                  Class
+                </p>
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Get Gym Bag
+                </p>
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Free 3 sessions
+                  with <br />
+                  Personal Trainer
+                </p>
+              </div>
+              <div className="text-center py-4">
+                <div className="flex justify-center">
+                  <ButtonLink text="View More" link="/membership" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
+            <div className="bg-red-falcon text-yellow-primary text-center">
+              <h1 className="text-wite text-4xl py-4 font-BebasNeue font-black tracking-wider">
+                NIGHT OWL
+              </h1>
+            </div>
+            <div className="text-color-red bg-neutral-100 p-6">
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
+                UNLIMITED <br />
+                ACCES
+              </h1>
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
+                START FROM
+              </h1>
+              <div className="flex pb-4">
+                <p>RP</p>
+                <p className="text-4xl font-black mx-2">5.088.000</p>
+                <p className="mt-auto"> / 6 Month</p>
+              </div>
+              <div className="ml-8 text-lg py-4">
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Check in start
+                  from 15.00 WIB
+                </p>
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Free Access All
+                  Class
+                </p>
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Get Gym Bag
+                </p>
+                <p className="-indent-8">
+                  <span className="text-2xl mr-2">&#9745;</span> Free 3 sessions
+                  with <br />
+                  Personal Trainer
+                </p>
+              </div>
+              <div className="text-center py-4">
+                <div className="flex justify-center">
+                  <ButtonLink text="View More" link="/membership" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="lg:flex justify-center">
@@ -536,7 +627,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="text-blue-primary">
         <h1 className="font-judul text-center text-6xl">LATEST BLOG POSTS</h1>
         <div className="container mx-auto md:flex md:flex-wrap md:justify-center">
@@ -552,7 +642,7 @@ function Home() {
                   5 hal yang perlu kamu siapkan sebelum pertama kali pergi ke
                   gym?
                 </h2>
-                <p>
+                <p className="font-judul">
                   Buat kamu yang pertama kali melakukan sesuatu biasanya
                   mengalami kebingungan dan keraguan. Apalagi ...{" "}
                 </p>
@@ -570,7 +660,7 @@ function Home() {
                 <h2 className="font-judul text-2xl tracking-wider mb-4">
                   Apa penyebab lemak perut
                 </h2>
-                <p>
+                <p className="font-judul">
                   Lemak perut memang menjengkelkan. Apalagi kalau sudah merusak
                   penampilan dan jadi membatasi ruang ...{" "}
                 </p>
@@ -588,7 +678,7 @@ function Home() {
                 <h2 className="font-judul text-2xl tracking-wider mb-4">
                   Program diet untuk turunkan berat badan
                 </h2>
-                <p>
+                <p className="font-judul">
                   Terkadang untuk menurunkan berat badan, olahraga saja tidak
                   cukup. Beberapa orang, mungkin ...{" "}
                 </p>

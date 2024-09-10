@@ -8,12 +8,12 @@ function Footer() {
   }
 
   function scrollToTop() {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }
 
   return (
     <div>
-      <div className="bg-blue-primary text-white font-Poppins pt-4 pb-8 text-base">
+      <div className="bg-red-falcon text-white font-Poppins pt-4 pb-8 text-base">
         <div className="text-center font-BebasNeue tracking-widest text-lg my-2">
           {/* <p><i className="icofont-instagram"></i> Follow US ON @FITNESSWORKS.ID</p> */}
           <p>
@@ -22,7 +22,7 @@ function Footer() {
               href="https://www.instagram.com/fitnessworks.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
             >
-              Follow US ON @FITNESSWORKS.ID
+              Follow US ON @FALCON_FITNESSBOX
             </a>
           </p>
         </div>
@@ -63,17 +63,17 @@ function Footer() {
           <div className="md:flex md:justify-around items-center lg:items-start">
             <div className="max-w-xs mx-auto md:mx-0 space-y-4 py-4">
               <img
-                src="/image/LogoFitnessworkPutih.png"
+                src="/image/falcon/logo-falcon-footer.png"
                 alt="UA Footer"
                 className="w-60"
               />
               <p className="text-sm font-extralight">
-                Fitnessworks is a new experience in fitness. We are the first
-                Gym & Fitness Centre with technology & time-based membership
-                system, in Indonesia. With technology we can provide high level
-                facility & activity with low-cost membership plan, so everyone
-                can join & begin their fitness journey. it is our mission to
-                create fitness for everyone.
+                Falcon fitness box is a new experience in fitness. We are the
+                first Gym & Fitness Centre with technology & time-based
+                membership system, in Indonesia. With technology we can provide
+                high level facility & activity with low-cost membership plan, so
+                everyone can join & begin their fitness journey. it is our
+                mission to create fitness for everyone.
               </p>
               <ul className="space-y-4">
                 <li>
@@ -96,9 +96,7 @@ function Footer() {
             </div>
             <div className="mx-auto grid md:grid-cols-2 xl:grid-cols-4 md:ml-8 max-w-xs md:max-w-full md:w-full md:mx-0">
               <div className="md:mx-auto space-y-4 py-4">
-                <h3 className="text-xl text-yellow-primary font-black">
-                  OUR GYM
-                </h3>
+                <h3 className="text-type  font-black">OUR GYM</h3>
                 <p>
                   <Link to="/workouts" onClick={atas}>
                     Workouts
@@ -111,9 +109,7 @@ function Footer() {
                 </p>
               </div>
               <div className="md:mx-auto space-y-4 py-4">
-                <h3 className="text-xl text-yellow-primary font-black">
-                  COMPANY
-                </h3>
+                <h3 className="text-type font-black">COMPANY</h3>
                 <p>
                   <Link to="/about" onClick={atas}>
                     About Us
@@ -134,9 +130,7 @@ function Footer() {
                 </p>
               </div>
               <div className="md:mx-auto space-y-4 py-4">
-                <h3 className="text-xl text-yellow-primary font-black">
-                  STORE
-                </h3>
+                <h3 className="text-type font-black">STORE</h3>
                 <p>
                   <Link to="/fitnessworks-apps" onClick={atas}>
                     Membership
@@ -149,9 +143,7 @@ function Footer() {
                 </p>
               </div>
               <div className="md:mx-auto space-y-4 py-4">
-                <h3 className="text-xl text-yellow-primary font-black">
-                  GET ASSISTANCE
-                </h3>
+                <h3 className="text-type font-black">GET ASSISTANCE</h3>
                 <p>
                   <Link to="/contact-us" onClick={atas}>
                     Help & Contact
@@ -176,9 +168,11 @@ function Footer() {
                 </p>
                 <p>Youtube</p>
 
-                <p><NavLink onClick={scrollToTop} to="/tnc">
-                Term & Condition
-                </NavLink></p>
+                <p>
+                  <NavLink onClick={scrollToTop} to="/tnc">
+                    Term & Condition
+                  </NavLink>
+                </p>
               </div>
             </div>
           </div>

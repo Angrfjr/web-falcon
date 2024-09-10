@@ -19,7 +19,7 @@ function Navbar() {
         relative
       ">
         <div className="flex justify-center items-center py-2 relative h-14 lg:h-12">
-          <img src="/image/LogoFitnessworkNavBar.png" alt="FitnessWorkc" className="h-7 sm:h-7 flex-none" />
+          <img src="/image/falcon/logo-falcon-header.png" alt="falcon" className="h-7 sm:h-7 flex-none" />
           <div className="absolute right-0 top-0 bottom-0 mr-3 flex items-center lg:hidden">
             <button id="hamburger" onClick={hamburger} name="hamburger" type="button">
               <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
