@@ -13,7 +13,7 @@ function Footer() {
 
   return (
     <div>
-      <div className="bg-red-falcon text-white font-Poppins pt-4 pb-8 text-base">
+      <div className="bg-red-900 text-white font-Poppins pt-4 pb-8 text-base">
         <div className="text-center font-BebasNeue tracking-widest text-lg my-2">
           {/* <p><i className="icofont-instagram"></i> Follow US ON @FITNESSWORKS.ID</p> */}
           <p>

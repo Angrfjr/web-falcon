@@ -1,19 +1,28 @@
 // import React from 'react'
 import React, { useState } from "react";
-import Modal from "../components/Modal";
+// import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
 import ButtonLink from "../components/ButtonLink";
 
 function Home() {
-  const [isAdModalOpen, setAdModalOpen] = useState(true);
+  // const [isAdModalOpen, setAdModalOpen] = useState(true);
 
-  const closeAdModal = () => {
-    setAdModalOpen(false);
-  };
+  // const closeAdModal = () => {
+  //   setAdModalOpen(false);
+  // };
   return (
     <div>
-      <Modal isOpen={isAdModalOpen} closeModal={closeAdModal} />
-
+      {/* <Modal isOpen={isAdModalOpen} closeModal={closeAdModal} /> */}
+      <div className="flex justify-center lg:max-h-screen overflow-hidden">
+        <video
+          className="object-cover object-right min-w-min lg:min-w-full"
+          loop
+          autoPlay
+          muted
+        >
+          <source src="/video/VideoBannerUA.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
           src="/image/falcon/bg-home-about.png"
@@ -44,7 +53,7 @@ function Home() {
           <button className="border  px-4 py-1 my-4">VIEW MORE</button>
         </div>
       </div>
-      <div className="2xl:container bg-blue-primary px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
+      <div className="3xl:container bg-blue-primary px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
         <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
           <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
             <div className="container">
@@ -63,7 +72,7 @@ function Home() {
           <img
             src="./image/falcon/bg-home-presale.png"
             alt="falcon"
-            className="object-cover object-center w-full h-full md:ml-auto max-w-5xl"
+            className="object-cover object-center w-full h-full md:ml-auto max-w-7xl"
           />
         </div>
       </div>
@@ -72,9 +81,10 @@ function Home() {
         <h2 className="font-judul text-center text-blue-primary text-5xl my-4">
           OUR PROGRAM
         </h2>
-        <div className="grid md:grid-cols-2 max-w-max mx-auto">
-          <div className="relative bg-blue-primary">
-            <div className="relative h-72 xl:h-full">
+        {/* <div className="grid md:grid-cols-2 max-w-max mx-auto"> */}
+        <div className="flex flex-col max-w-max mx-auto">
+          <div className="relative bg-red-falcon">
+            <div className="relative h-screen md:h-1/2 xl:h-1/3">
               <img
                 src="/image/personal_trainer/PT2.jpg"
                 alt="Fitnesswork"
@@ -229,19 +239,7 @@ function Home() {
           </div> */}
         </div>
       </div>
-
-      <div className="flex justify-center lg:max-h-screen overflow-hidden">
-        <video
-          className="object-cover object-right min-w-min lg:min-w-full"
-          loop
-          autoPlay
-          muted
-        >
-          <source src="/video/VideoBannerUA.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div className="grid sm:grid-cols-2 xl:grid-cols-4 my-4">
+      {/* <div className="grid sm:grid-cols-2 xl:grid-cols-4 my-4">
         <div className="text-center my-4 space-y-4 relative pb-16">
           <div>
             <img
@@ -342,12 +340,11 @@ function Home() {
             <ButtonLink text="FIND OUT MORE" link="/contact-us" />
           </div>
         </div>
-      </div>
-
+      </div> */}
       <div className="md:flex md:justify-center md:items-center my-4">
         <div>
           <img
-            src="/image/home/FitnessWork_apps.png"
+            src="/image/falcon/falcon-app.png"
             alt="Mobile App Fitness Works"
             className="md:max-w-md lg:max-w-lg mx-auto"
           />
@@ -357,16 +354,40 @@ function Home() {
             SUPPORTING YOU EVERY STEP OF THE WAY
           </h2>
           <p>
-            The Fitnesswork app lets you manage your membership from the palm of
-            your hand. With contactless entry, access to over 600 workouts and
-            personalised training plans. And so much more!
+            with contactless entry, access to your training journey, challenges,
+            class schedules, community platform and so much more
           </p>
           <div className="flex justify-center">
             <ButtonLink text="FIND OUT MORE" link="/fitnessworks-apps" />
           </div>
         </div>
+        <div>
+          <img
+            src="/image/falcon/falcon-tv.png"
+            alt="Mobile App Fitness Works"
+            className="md:max-w-md lg:max-w-lg mx-auto"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col items-center my-4">
+        <div className="text-center mb-4">
+          <p>JOIN TODAY & GET A FREE HEART RATE TRACKER</p>
+          <p>
+            Find a heart rate monitor that makes your members feel comfortable
+            by utilizing live feedback in the gym, Encouraging the Myzone Effort
+            Point challenge, and rewarding individuals over the years.
+          </p>
+        </div>
+        <div className="w-full max-w-lg lg:max-w-5xl">
+          <img
+            src="/image/falcon/falcon-heart-rate-flow.png"
+            alt="Mobile App Fitness Works"
+            className="w-full"
+          />
+        </div>
       </div>
 
+      {/* 
       <div className="bg-blue-primary py-8">
         <div className="relative py-10 text-center text-white font-BebasNeue font-black">
           <h1 className="text-[10rem] opacity-20 py-8">SHOP</h1>
@@ -438,14 +459,14 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="py-8">
-        <div className="relative py-10 text-center text-blue-primary font-BebasNeue font-black">
+        {/* <div className="relative py-10 text-center text-blue-primary font-BebasNeue font-black">
           <h1 className="text-[10rem] opacity-20 py-8">SHOP</h1>
           <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
             <h1 className="text-5xl">PRICING PLAN</h1>
           </div>
-        </div>
+        </div> */}
         <div className="lg:flex justify-center">
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
             <div className="bg-menyala-falcon text-blue-primary text-center">
@@ -494,7 +515,7 @@ function Home() {
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
             <div className="bg-red-falcon text-yellow-primary text-center">
               <h1 className="text-wite text-4xl py-4 font-BebasNeue font-black tracking-wider">
-                NIGHT OWL
+                PRESALE
               </h1>
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
@@ -538,23 +559,23 @@ function Home() {
         </div>
         <div className="lg:flex justify-center">
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
-            <div className="bg-yellow-primary text-blue-primary text-center">
-              <h1 className="text-4xl py-4 font-BebasNeue font-black tracking-wider">
-                EARLY RISER
+            <div className="bg-menyala-falcon text-blue-primary text-center">
+              <h1 className="text-wite text-4xl py-4 font-BebasNeue tracking-wider">
+                PRESALE
               </h1>
             </div>
-            <div className="bg-neutral-100 p-6 text-blue-primary">
+            <div className="text-color-red bg-neutral-100 p-6">
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-                UNLIMITED <br />
-                ACCES
+                FREE HEART RATE <br />
+                TRACKER (MYZONE)
               </h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
               </h1>
               <div className="flex pb-4">
                 <p>RP</p>
-                <p className="text-4xl font-black mx-2">248.000</p>
-                <p className="mt-auto">All Club / Month</p>
+                <p className="text-4xl font-black mx-2">3.288.000</p>
+                <p className="mt-auto"> / 3 Month</p>
               </div>
               <div className="ml-8 text-lg py-4">
                 <p className="-indent-8">
@@ -582,12 +603,12 @@ function Home() {
             </div>
           </div>
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
-            <div className="bg-blue-primary text-yellow-primary text-center">
-              <h1 className="text-4xl py-4 font-BebasNeue font-black tracking-wider">
-                NIGHT OWL
+            <div className="bg-red-falcon text-yellow-primary text-center">
+              <h1 className="text-wite text-4xl py-4 font-BebasNeue font-black tracking-wider">
+                PRESALE
               </h1>
             </div>
-            <div className="bg-neutral-100 p-6 text-blue-primary">
+            <div className="text-color-red bg-neutral-100 p-6">
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
                 UNLIMITED <br />
                 ACCES
@@ -597,8 +618,8 @@ function Home() {
               </h1>
               <div className="flex pb-4">
                 <p>RP</p>
-                <p className="text-4xl font-black mx-2">278.000</p>
-                <p className="mt-auto">All Club / Month</p>
+                <p className="text-4xl font-black mx-2">1.100.000</p>
+                <p className="mt-auto"> / Month</p>
               </div>
               <div className="ml-8 text-lg py-4">
                 <p className="-indent-8">
@@ -688,7 +709,7 @@ function Home() {
         </div>
       </div>
 
-      <div id="partnership">
+      {/* <div id="partnership">
         <div className="text-center">
           <p className="font-judul text-2xl">UNPARALLELED</p>
           <h2 className="font-judul text-6xl text-blue-primary">
@@ -727,7 +748,7 @@ function Home() {
             className="h-20 m-4"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
