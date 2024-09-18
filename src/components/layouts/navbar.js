@@ -31,6 +31,7 @@ function Navbar() {
               onClick={hamburger}
               name="hamburger"
               type="button"
+              className="bg-menyala-falcon text-white p-2 rounded"
             >
               <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
               <span className="hamburger-line transition duration-300 ease-in-out"></span>
@@ -49,7 +50,7 @@ function Navbar() {
             <div className="flex justify-center items-center text-center lg:w-full lg:font-black text-xl tracking-wider">
               <ul className="lg:flex lg:space-x-2 xl:space-x-4">
                 <NavLink onClick={hamburger} to="/" className="lg:px-3">
-                  <li className="py-1.5">Home</li>
+                  <li className="text-color py-1.5">Home</li>
                 </NavLink>
 
                 <li className="py-1.5 lg:px-3 group relative cursor-pointer">
@@ -97,7 +98,7 @@ function Navbar() {
                         </li>
                       </NavLink>
                       <NavLink onClick={hamburger} to="/faqs">
-                        <li className="hover:text-yellow-primary transition-all duration-300">
+                        <li className="hover:text- transition-all duration-300">
                           Faq
                         </li>
                       </NavLink>
@@ -124,7 +125,7 @@ function Navbar() {
               <ButtonNav
                 toLink="/invesment"
                 text="FIND FALCON NEAR YOU"
-                className="bg-red-600 text-white py-2 px-4 rounded"
+                className="text-white py-2 px-4 rounded"
               />
             </div>
           </div>
