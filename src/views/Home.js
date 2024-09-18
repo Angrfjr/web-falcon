@@ -1,18 +1,11 @@
-// import React from 'react'
-import React, { useState } from "react";
-// import Modal from "../components/Modal";
+import React from 'react'
 import { Link } from "react-router-dom";
 import ButtonLink from "../components/ButtonLink";
 
 function Home() {
-  // const [isAdModalOpen, setAdModalOpen] = useState(true);
 
-  // const closeAdModal = () => {
-  //   setAdModalOpen(false);
-  // };
   return (
     <div>
-      {/* <Modal isOpen={isAdModalOpen} closeModal={closeAdModal} /> */}
       <div className="flex justify-center lg:max-h-screen overflow-hidden">
         <video
           className="object-cover object-right min-w-min lg:min-w-full"
@@ -30,19 +23,20 @@ function Home() {
           className="object-cover object-center min-w-min lg:min-w-full max-h-[80vh]"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/30"></div>
-        <div className="container absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-md mx-auto text-white text-center">
+        <div className="container absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-7xl mx-auto text-white text-center">
           <img
             src="./image/falcon/logo-falcon-home-video.png"
-            alt="Fitnessworks"
-            className="w-full"
+            alt="Falcon"
+            className="w-full max-w-3xl"
           />
-          <p>
+          <br></br>
+          <p className="text-2xl">
             Introducing Falcon Fitness Box, where science meets nightlife for an
             unparalleled workout experience. Our cutting-edge fitness studio
             leverages unique heart rate tracking technology to ensure you
             achieve faster, safer results.
-          </p>
-          <p>
+          </p><br></br>
+          <p className="text-2xl">
             Imagine breaking a sweat under dynamic lighting effects and
             heart-pumping music, all set within a vibrant nightclub atmosphere.
             Perfect for fitness enthusiasts and tech-savvy individuals alike,
@@ -50,6 +44,7 @@ function Home() {
             also incredibly fun. Join us at Falcon Fitness Box to transform your
             fitness journey with the perfect blend of science and excitement.
           </p>
+
           <button className="border  px-4 py-1 my-4">VIEW MORE</button>
         </div>
       </div>
@@ -57,10 +52,7 @@ function Home() {
         <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
           <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
             <div className="container">
-              <p>PRE-SALE STARTS OCTOBER 2024</p>
-              {/* <p>Get your 3 days trial, get rid all your excuses, </p>
-              <p>change now or never! Make better version of you with Fitnessworks.</p>
-              <p>#fitnessforeveryone</p> */}
+              <p className="text-5xl">PRE-SALE STARTS OCTOBER 2024</p>
               <div className="text-red-primary my-4">
                 <ButtonLink text="MORE INFO" link="/form-free-trial" />
               </div>
@@ -81,7 +73,6 @@ function Home() {
         <h2 className="font-judul text-center text-blue-primary text-5xl my-4">
           OUR PROGRAM
         </h2>
-        {/* <div className="grid md:grid-cols-2 max-w-max mx-auto"> */}
         <div className="flex flex-col max-w-max mx-auto">
           <div className="relative bg-red-falcon">
             <div className="relative h-screen md:h-1/2 xl:h-1/3">
@@ -239,108 +230,6 @@ function Home() {
           </div> */}
         </div>
       </div>
-      {/* <div className="grid sm:grid-cols-2 xl:grid-cols-4 my-4">
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_1.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
-          </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>
-              TIME BASED MEMBERShip, <br />
-              With various Pricing Plan
-            </h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              We created the first time based membership system, in Indonesia.
-              This system let you to choose how long you want to be in our club.
-              You only pay while you in our club. What price you want, what
-              exercise you need, what facility you get, all in your control,
-              packed with our Fitnessworks Apps.
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="MEMBERSHIP OPTION" link="/membership" />
-          </div>
-        </div>
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_2.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
-          </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>
-              High quality & Trendy design <br />
-              gym & Classes
-            </h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              We realize, nowdays, high quality equipment & class isn’t enough.
-              Our trendy design will keep you exist on your social media.
-              Furthermore, our trendy design will boosting your mood to
-              exercise, which will support you to achieve your fitness goals.
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="FIND OUT MORE" link="/workouts" />
-          </div>
-        </div>
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_3.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
-          </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>FREE Fitnessworks APP</h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              Our top rated, free app features a personalised workout tracking
-              for every member. you can buy or upgrade membership everywhere &
-              anytime you need. Booking your class and PT appointment from
-              anywhere and anytime
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="FIND OUT MORE" link="/fitnessworks-apps" />
-          </div>
-        </div>
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_4.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
-          </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>
-              SUPPORTING YOUR HEALTH <br />
-              JOURNEY
-            </h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              Whether it’s support from a Personal Trainer, your expert Gym
-              Team, our app, help is always at hand.
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="FIND OUT MORE" link="/contact-us" />
-          </div>
-        </div>
-      </div> */}
       <div className="md:flex md:justify-center md:items-center my-4">
         <div>
           <img
@@ -386,80 +275,6 @@ function Home() {
           />
         </div>
       </div>
-
-      {/* 
-      <div className="bg-blue-primary py-8">
-        <div className="relative py-10 text-center text-white font-BebasNeue font-black">
-          <h1 className="text-[10rem] opacity-20 py-8">SHOP</h1>
-          <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
-            <h1 className="text-4xl sm:text-6xl">
-              training equipment & Merchandise
-            </h1>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 container mx-auto">
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img
-                src="/image/home/Gym_bag.jpg"
-                alt="Shop"
-                className="max-w-xs mx-auto"
-              />
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img
-                src="/image/home/Slaves_yellow.jpg"
-                alt="Shop"
-                className="max-w-xs mx-auto"
-              />
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img
-                src="/image/home/Gym_bag_2.jpg"
-                alt="Shop"
-                className="max-w-xs mx-auto"
-              />
-              <div className="absolute top-0 left-0 pt-4 pl-4">
-                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
-              </div>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img
-                src="/image/home/Tshirt.jpg"
-                alt="Shop"
-                className="max-w-xs mx-auto"
-              />
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img
-                src="/image/home/Mini_towel.jpg"
-                alt="Shop"
-                className="max-w-xs mx-auto"
-              />
-              <div className="absolute top-0 left-0 pt-4 pl-4">
-                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
-              </div>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img
-                src="/image/home/Yoga_mat.jpg"
-                alt="Shop"
-                className="max-w-xs mx-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="py-8">
         {/* <div className="relative py-10 text-center text-blue-primary font-BebasNeue font-black">
           <h1 className="text-[10rem] opacity-20 py-8">SHOP</h1>
@@ -520,8 +335,6 @@ function Home() {
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-                UNLIMITED <br />
-                ACCES
               </h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
@@ -559,15 +372,13 @@ function Home() {
         </div>
         <div className="lg:flex justify-center">
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
-            <div className="bg-menyala-falcon text-blue-primary text-center">
+            <div className="bg-red-falcon text-blue-primary text-center">
               <h1 className="text-wite text-4xl py-4 font-BebasNeue tracking-wider">
                 PRESALE
               </h1>
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-                FREE HEART RATE <br />
-                TRACKER (MYZONE)
               </h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
@@ -610,8 +421,6 @@ function Home() {
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-                UNLIMITED <br />
-                ACCES
               </h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
@@ -708,47 +517,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div id="partnership">
-        <div className="text-center">
-          <p className="font-judul text-2xl">UNPARALLELED</p>
-          <h2 className="font-judul text-6xl text-blue-primary">
-            BUSINESS SUPPORT
-          </h2>
-        </div>
-        <div className="flex flex-wrap justify-around items-center py-4 lg:px-10">
-          <img
-            src="/image/logo/LOGO_UA_HITAM_TM.png"
-            alt="BUSINESS SUPPORT"
-            className="h-20 m-4"
-          />
-          <img
-            src="/image/logo/URBAN-LOGO_JR_HIRES.png"
-            alt="BUSINESS SUPPORT"
-            className="h-20 m-4"
-          />
-          <img
-            src="/image/logo/URBAN-FALCON FINAL-TM.png"
-            alt="BUSINESS SUPPORT"
-            className="h-20 m-4"
-          />
-          <img
-            src="/image/logo/Valor_TM.png"
-            alt="BUSINESS SUPPORT"
-            className="h-20 m-4"
-          />
-          <img
-            src="/image/logo/LogoFitnessworkPanjang.png"
-            alt="BUSINESS SUPPORT"
-            className="h-12 m-4"
-          />
-          <img
-            src="/image/logo/CIRCUIT.png"
-            alt="BUSINESS SUPPORT"
-            className="h-20 m-4"
-          />
-        </div>
-      </div> */}
     </div>
   );
 }

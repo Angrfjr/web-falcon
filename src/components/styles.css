@@ -47,12 +47,12 @@
   object-fit: contain; /* Menggunakan object-fit agar gambar tetap besar */
 }
 
-.bg-red-falcon{
-  background-color: #530202;
+.bg-red-falcon {
+  background-color: #530202 !important;
 }
 
 .bg-menyala-falcon{
-  background-color: #FF0000;
+  background-color: #FF0000 !important;
 }
 
 .text-type{

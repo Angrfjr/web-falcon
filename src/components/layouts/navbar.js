@@ -23,7 +23,7 @@ function Navbar() {
           <img
             src="/image/falcon/logo-falcon-header.png"
             alt="falcon"
-            className="h-7 sm:h-7 flex-none"
+            className="h-12 sm:h-12 flex-none"
           />
           <div className="absolute right-0 top-0 bottom-0 mr-3 flex items-center lg:hidden">
             <button
