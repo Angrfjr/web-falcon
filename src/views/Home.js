@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 import ButtonLink from "../components/ButtonLink";
 
 function Home() {
-
   return (
     <div>
       <div className="flex justify-center lg:max-h-screen overflow-hidden">
@@ -35,7 +34,8 @@ function Home() {
             unparalleled workout experience. Our cutting-edge fitness studio
             leverages unique heart rate tracking technology to ensure you
             achieve faster, safer results.
-          </p><br></br>
+          </p>
+          <br></br>
           <p className="text-2xl">
             Imagine breaking a sweat under dynamic lighting effects and
             heart-pumping music, all set within a vibrant nightclub atmosphere.
@@ -48,19 +48,23 @@ function Home() {
           <button className="border  px-4 py-1 my-4">VIEW MORE</button>
         </div>
       </div>
-      <div className="3xl:container bg-blue-primary px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
+      <div className="3xl:container bg-red-falcon px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
         <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
           <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
             <div className="container">
               <p className="text-5xl">PRE-SALE STARTS OCTOBER 2024</p>
               <div className="text-red-primary my-4">
-                <ButtonLink text="MORE INFO" link="/form-free-trial" />
+                <ButtonLink
+                  text="MORE INFO"
+                  link="/form-free-trial"
+                  className="text-color"
+                />
               </div>
             </div>
           </div>
         </div>
         <div className="relative">
-          <div className="absolute h-full w-full bg-gradient-to-b md:bg-gradient-to-r from-blue-primary"></div>
+          <div className="absolute h-full w-full bg-gradient-to-b md:bg-gradient-to-r"></div>
           <img
             src="./image/falcon/bg-home-presale.png"
             alt="falcon"
@@ -334,8 +338,7 @@ function Home() {
               </h1>
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
-              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-              </h1>
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8"></h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
               </h1>
@@ -378,8 +381,7 @@ function Home() {
               </h1>
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
-              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-              </h1>
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8"></h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
               </h1>
@@ -420,8 +422,7 @@ function Home() {
               </h1>
             </div>
             <div className="text-color-red bg-neutral-100 p-6">
-              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8">
-              </h1>
+              <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8"></h1>
               <h1 className="font-BebasNeue font-black tracking-wider text-4xl leading-8 pt-8">
                 START FROM
               </h1>
