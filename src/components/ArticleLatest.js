@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function ArticleLatest() {
   return (
     <div>
-      <div className="py-8 border-t-2 border-neutral-600">
-          <div className="text-blue-primary">
+      <div className="bg-red-falcon py-8 border-t-2 border-neutral-600">
+          <div className="text-color-red">
             <h2 className="uppercase text-4xl font-judul text-center">LATEST BLOG POSTS</h2>
           </div>
           <div className="flex flex-nowrap justify-start md:justify-center space-x-8 overflow-auto no-scrollbar my-12 mb-8">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import ButtonNav from "../buttonNav";
-
+import "../styles.css";
 function Navbar() {
   const hamburger = () => {
     let hamburger = document.querySelector("#hamburger");
@@ -60,7 +60,7 @@ function Navbar() {
                     lg:absolute lg:group-hover:h-44 lg:min-w-max lg:-left-10 lg:text-left
                   "
                   >
-                    <ul className="mt-2 lg:text-white lg:bg-blue-primary lg:p-4 lg:rounded-xl">
+                    <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
                       <NavLink onClick={hamburger} to="/workouts">
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           OUR PROGRAM
@@ -91,7 +91,7 @@ function Navbar() {
                     lg:absolute lg:group-hover:h-36 lg:min-w-max lg:-left-10 lg:text-left
                   "
                   >
-                    <ul className="mt-2 lg:text-white lg:bg-blue-primary lg:p-4 lg:rounded-xl">
+                    <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
                       <NavLink onClick={hamburger} to="/about">
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           About Us

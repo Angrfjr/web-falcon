@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 function FitnessworksApps() {
   return (
     <div>
-      <div className="font-judul text-4xl tracking-wide h-20 bg-blue-primary text-white flex justify-center items-center">
-        <h1>Fitnessworks Apps</h1>
+      <div className="bg-red-falcon font-judul text-4xl tracking-wide h-20 text-white flex justify-center items-center">
+        <h1 className='text-wite'>Falcon Apps</h1>
       </div>
 
       <div className="container lg:flex lg:justify-center lg:items-center my-4">
         <div>
-          <img src="/image/home/FitnessWork_apps.png" alt="Mobile App Fitness Works" className="md:max-w-md lg:max-w-lg mx-auto" />
+          <img src="/image/falcon/falcon-app.png" alt="Mobile App Fitness Works" className="md:max-w-md lg:max-w-lg mx-auto" />
         </div>
         <div className="text-blue-primary py-8 md:max-w-3xl">
           <h2 className="font-BebasNeue font-black text-4xl mb-4">SUPPORTING YOU EVERY STEP OF THE WAY</h2>
@@ -31,7 +31,7 @@ function FitnessworksApps() {
         </div>
       </div>
 
-      <div className="container bg-neutral-100 text-blue-primary py-8">
+      {/* <div className="container bg-neutral-100 text-blue-primary py-8">
         <h2 className="font-judul text-4xl text-center">EXPLORE THE APP’S FEATURES</h2>
         <div className="mt-8 mb-4 grid gap-4 xl:gap-8 lg:grid-cols-3">
           <div className="my-4">
@@ -56,7 +56,7 @@ function FitnessworksApps() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

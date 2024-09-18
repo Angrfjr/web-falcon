@@ -5,7 +5,7 @@ import ButtonLink from "../components/ButtonLink";
 function Home() {
   return (
     <div>
-      <div className="flex justify-center lg:max-h-screen overflow-hidden">
+      {/* <div className="flex justify-center lg:max-h-screen overflow-hidden">
         <video
           className="object-cover object-right min-w-min lg:min-w-full"
           loop
@@ -14,7 +14,7 @@ function Home() {
         >
           <source src="/video/VideoBannerUA.mp4" type="video/mp4" />
         </video>
-      </div>
+      </div> */}
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
           src="/image/falcon/bg-home-about.png"
@@ -68,16 +68,15 @@ function Home() {
           <img
             src="./image/falcon/bg-home-presale.png"
             alt="falcon"
-            className="object-cover object-center w-full h-full md:ml-auto max-w-7xl"
+            className="object-cover object-center w-full h-full md:ml-auto max-w-8xl"
           />
         </div>
       </div>
-
-      <div className="pt-6">
+      {/* <div className="pt-6">
         <h2 className="font-judul text-center text-blue-primary text-5xl my-4">
           OUR PROGRAM
         </h2>
-        <div className="flex flex-col max-w-max mx-auto">
+        <div className="bg-ref-falcon flex flex-col max-w-max mx-auto">
           <div className="relative bg-red-falcon">
             <div className="relative h-screen md:h-1/2 xl:h-1/3">
               <img
@@ -189,51 +188,8 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* <div className="relative">
-            <img src="/image/home/Photo_classes.jpg" alt="Fitnesswork" className="w-full h-full object-cover object-center"/>
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">FUN FITNESS CLASS WITH CERTIFIED INSTRUCTOR</h2>
-                  <p>If you like group exercise, fun, and various activities then you should booking our class. Know more our classes based on your fitness goals, click link on the right</p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/workouts" />
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="relative">
-            <img src="/image/home/News_Example_2.jpg" alt="Fitnesswork" className="w-full h-full object-cover object-center"/>
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">ONLINE WORKOUTS</h2>
-                  <p>Didn’t have access to nearby gym ? Worry no more! With our online class, you can choose exercise You want. Exercise everywhere, stay safe, stay fun and Stay healthy. Get the membership Now !</p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/workouts" />
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="relative">
-            <img src="/image/home/Photo_pt.jpg" alt="Fitnesswork" className="w-full h-full object-cover object-center"/>
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">On-demand Video</h2>
-                  <p>Did you have crowded schedule? Need a flexible time to exercise yet still got the progress you want ? subscribe to our online streaming! exercise anytime, anywhere with professional guidance.</p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/workouts" />
-                </div>
-              </div>
-            </div>
-          </div> */}
-        </div>
       </div>
+      </div> */}
       <div className="md:flex md:justify-center md:items-center my-4">
         <div>
           <img
@@ -243,7 +199,7 @@ function Home() {
           />
         </div>
         <div className="text-center text-blue-primary py-8 md:max-w-3xl">
-          <h2 className="font-BebasNeue font-black text-4xl mb-4">
+          <h2 className="text-color-red font-BebasNeue text-4xl mb-4">
             SUPPORTING YOU EVERY STEP OF THE WAY
           </h2>
           <p>
@@ -251,7 +207,7 @@ function Home() {
             class schedules, community platform and so much more
           </p>
           <div className="flex justify-center">
-            <ButtonLink text="FIND OUT MORE" link="/fitnessworks-apps" />
+            <ButtonLink text="VIEW MORE" link="/fitnessworks-apps" />
           </div>
         </div>
         <div>
@@ -264,7 +220,7 @@ function Home() {
       </div>
       <div className="flex flex-col items-center my-4">
         <div className="text-center mb-4">
-          <p>JOIN TODAY & GET A FREE HEART RATE TRACKER</p>
+          <p className="text-color-red font-BebasNeue text-4xl mb-4">JOIN TODAY & GET A FREE HEART RATE TRACKER</p>
           <p>
             Find a heart rate monitor that makes your members feel comfortable
             by utilizing live feedback in the gym, Encouraging the Myzone Effort

@@ -24,21 +24,21 @@ function Shop() {
     <div>
       <div className="lg:max-h-screen relative">
         <img src="/image/shop/Header_Store.jpg" alt="Fitnesswork Presentation" className="object-cover object-center max-h-72 w-full"/>
-        <div className="text-center h-24 bg-blue-primary flex items-center">
+        {/* <div className="text-center h-24 bg-blue-primary flex items-center">
           <h1 className="font-judul text-4xl text-center text-white mx-auto">PRICING PLAN MEMBERSHIP</h1>
-        </div>
+        </div> */}
       </div>
 
-      <div className="lg:grid lg:grid-cols-2">
+      {/* <div className="lg:grid lg:grid-cols-2">
         <div className="bg-neutral-100 text-yellow-primary hover:bg-yellow-primary hover:text-blue-primary transition-all duration-300">
           <h2 className="font-judul text-4xl text-center py-4">EARLY RiSER</h2>
         </div>
         <div className="bg-neutral-100 text-blue-primary hover:bg-blue-primary hover:text-yellow-primary transition-all duration-300 border-t-4 lg:border-t-0 border-neutral-400 lg:border-l-4">
           <h2 className="font-judul text-4xl text-center py-4">NIGHT OWL</h2>
         </div>
-      </div>
+      </div> */}
 
-      <div className="container grid lg:grid-cols-2 my-4 text-blue-primary">
+      {/* <div className="container grid lg:grid-cols-2 my-4 text-blue-primary">
         <div className="max-w-sm mx-auto my-4 w-full">
           <h2 className="font-judul text-2xl">TIPE MEMBERSHIP</h2>
           <p>Pilih Gym akses membership anda</p>
@@ -66,9 +66,9 @@ function Shop() {
           </select>
         </div>
         <div></div>
-      </div>
+      </div> */}
 
-      <div className="container text-blue-primary">
+      {/* <div className="container text-blue-primary">
         <div className="py-2">
           <h2 className="font-judul text-2xl">Durasi Membership</h2>
           <p>Pilih jangka waktu membership anda</p>
@@ -133,10 +133,10 @@ function Shop() {
           </Link>
         </div>
       </div>
-      
+       */}
       <div className="bg-neutral-100">
-        <div className="text-center h-24 bg-blue-primary flex items-center">
-          <h1 className="font-judul text-4xl text-center text-white mx-auto">PRICING PLAN MEMBERSHIP</h1>
+        <div className="bg-red-falcon text-center h-24 flex items-center">
+          <h1 className="text-wite text-4xl text-center text-white mx-auto">PRICING PLAN MEMBERSHIP</h1>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 container mx-auto my-4">
           <div className="m-4">

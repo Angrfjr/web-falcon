@@ -1,18 +1,19 @@
 import React from "react";
+import '../components/styles.css'
 
 function Privacy() {
   return (
     <div>
-      <div className="font-judul text-5xl bg-blue-primary text-white text-center py-4">
-        <h1>Kebijakan Privasi Aplikasi FitnessWorks</h1>
+      <div className="bg-red-falcon font-judul text-5xl text-white text-center py-4">
+        <h1 className="text-wite">Kebijakan Privasi Aplikasi FALCON</h1>
       </div>
       <div className="container mx-auto py-10">
         <div className="px-4 md:px-8 pb-8">
           <section className="mb-8">
             <h2 className="text-2xl font-bold mt-4">Rahasia pribadi</h2>
             <p className="text-justify">
-              FITNESSWORKS membangun aplikasi sebagai aplikasi membership untuk
-              dapat mengakses fasilitas di club FITNESSWORKS. Halaman ini
+              FALCON membangun aplikasi sebagai aplikasi membership untuk
+              dapat mengakses fasilitas di club FALCON. Halaman ini
               digunakan untuk menginformasikan pengunjung mengenai kebijakan
               kami dengan pengumpulan, penggunaan, dan pengungkapan Informasi
               Pribadi jika ada yang memutuskan untuk menggunakan Layanan kami.
