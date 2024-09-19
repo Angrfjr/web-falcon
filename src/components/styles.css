@@ -71,3 +71,21 @@
 .text-color-red{
   color: #530202;
 }
+
+.custom-button {
+  border: 2px solid red; /* Red border */
+  background-color: transparent; /* Transparent background */
+  color: red; /* Red text color */
+  padding: 10px 20px; /* Padding for button size */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+.custom-button:hover {
+  background-color: red; /* Red background on hover */
+  color: white; /* White text on hover */
+}

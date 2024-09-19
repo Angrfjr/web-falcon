@@ -54,7 +54,7 @@ function Navbar() {
                 </NavLink>
 
                 <li className="py-1.5 lg:px-3 group relative cursor-pointer">
-                  <p>WorkOuts</p>
+                  <p className="text-color-red">WorkOuts</p>
                   <div
                     className="h-0 group-hover:h-[135px] overflow-hidden transition-all duration-300
                     lg:absolute lg:group-hover:h-44 lg:min-w-max lg:-left-10 lg:text-left
@@ -85,7 +85,7 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="py-1.5 lg:px-3 group relative cursor-pointer">
-                  <p>About</p>
+                  <p className="text-color-red">About</p>
                   <div
                     className="h-0 group-hover:h-[105px] overflow-hidden transition-all duration-300
                     lg:absolute lg:group-hover:h-36 lg:min-w-max lg:-left-10 lg:text-left
@@ -110,14 +110,17 @@ function Navbar() {
                     </ul>
                   </div>
                 </li>
-                <NavLink onClick={hamburger} to="/article" className="lg:px-3">
+                {/* <NavLink onClick={hamburger} to="/article" className="lg:px-3">
                   <li className="py-1.5">Article</li>
-                </NavLink>
+                </NavLink> */}
                 <NavLink onClick={hamburger} to="/shop" className="lg:px-3">
-                  <li className="py-1.5">Shop</li>
+                  <li className="text-color-red py-1.5">Shop</li>
                 </NavLink>
-                <NavLink onClick={hamburger} to="/privacy" className="lg:px-3">
+                {/* <NavLink onClick={hamburger} to="/privacy" className="lg:px-3">
                   <li className="py-1.5">Privasi</li>
+                </NavLink> */}
+                <NavLink onClick={hamburger} to="/privacy" className="lg:px-3">
+                  <li className="text-color-red py-1.5">Partnership</li>
                 </NavLink>
               </ul>
             </div>

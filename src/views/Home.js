@@ -44,8 +44,9 @@ function Home() {
             also incredibly fun. Join us at Falcon Fitness Box to transform your
             fitness journey with the perfect blend of science and excitement.
           </p>
+          <br></br>
 
-          <button className="border  px-4 py-1 my-4">VIEW MORE</button>
+          <button className="custom-button">VIEW MORE</button>
         </div>
       </div>
       <div className="3xl:container bg-red-falcon px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
@@ -54,11 +55,14 @@ function Home() {
             <div className="container">
               <p className="text-5xl">PRE-SALE STARTS OCTOBER 2024</p>
               <div className="text-red-primary my-4">
-                <ButtonLink
-                  text="MORE INFO"
-                  link="/form-free-trial"
-                  className="text-color"
-                />
+                <div class="text-red-primary my-4">
+                  <button
+                    onClick="window.open('https://presale.falconfitnessbox.id/', '_blank')"
+                    class="custom-button"
+                  >
+                    MORE INFO
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -207,7 +211,12 @@ function Home() {
             class schedules, community platform and so much more
           </p>
           <div className="flex justify-center">
-            <ButtonLink text="VIEW MORE" link="/fitnessworks-apps" />
+            <button
+              onClick="window.open('/fitnessworks-apps', '_blank')"
+              class="custom-button"
+            >
+              View More
+            </button>
           </div>
         </div>
         <div>
@@ -220,7 +229,9 @@ function Home() {
       </div>
       <div className="flex flex-col items-center my-4">
         <div className="text-center mb-4">
-          <p className="text-color-red font-BebasNeue text-4xl mb-4">JOIN TODAY & GET A FREE HEART RATE TRACKER</p>
+          <p className="text-color-red font-BebasNeue text-4xl mb-4">
+            JOIN TODAY & GET A FREE HEART RATE TRACKER
+          </p>
           <p>
             Find a heart rate monitor that makes your members feel comfortable
             by utilizing live feedback in the gym, Encouraging the Myzone Effort
@@ -282,7 +293,12 @@ function Home() {
               </div>
               <div className="text-center py-4">
                 <div className="flex justify-center">
-                  <ButtonLink text="View More" link="/membership" />
+                  <button
+                    onClick="window.open('/membership', '_blank')"
+                    class="custom-button"
+                  >
+                    View More
+                  </button>
                 </div>
               </div>
             </div>
@@ -323,7 +339,12 @@ function Home() {
               </div>
               <div className="text-center py-4">
                 <div className="flex justify-center">
-                  <ButtonLink text="View More" link="/membership" />
+                  <button
+                    onClick="window.open(window.location.origin + '/membership', '_blank')"
+                    class="custom-button"
+                  >
+                    View More
+                  </button>
                 </div>
               </div>
             </div>
@@ -366,7 +387,12 @@ function Home() {
               </div>
               <div className="text-center py-4">
                 <div className="flex justify-center">
-                  <ButtonLink text="View More" link="/membership" />
+                  <button
+                    onClick="window.open(window.location.origin + '/membership', '_blank')"
+                    class="custom-button"
+                  >
+                    View More
+                  </button>
                 </div>
               </div>
             </div>
@@ -407,7 +433,12 @@ function Home() {
               </div>
               <div className="text-center py-4">
                 <div className="flex justify-center">
-                  <ButtonLink text="View More" link="/membership" />
+                  <button
+                    onClick="window.open(window.location.origin + '/membership', '_blank')"
+                    class="custom-button"
+                  >
+                    View More
+                  </button>
                 </div>
               </div>
             </div>
