@@ -5,16 +5,6 @@ import ButtonLink from "../components/ButtonLink";
 function Home() {
   return (
     <div>
-      {/* <div className="flex justify-center lg:max-h-screen overflow-hidden">
-        <video
-          className="object-cover object-right min-w-min lg:min-w-full"
-          loop
-          autoPlay
-          muted
-        >
-          <source src="/video/VideoBannerUA.mp4" type="video/mp4" />
-        </video>
-      </div> */}
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
           src="/image/falcon/bg-home-about.png"
@@ -76,124 +66,102 @@ function Home() {
           />
         </div>
       </div>
-      {/* <div className="pt-6">
-        <h2 className="font-judul text-center text-blue-primary text-5xl my-4">
-          OUR PROGRAM
-        </h2>
-        <div className="bg-ref-falcon flex flex-col max-w-max mx-auto">
-          <div className="relative bg-red-falcon">
-            <div className="relative h-screen md:h-1/2 xl:h-1/3">
-              <img
-                src="/image/personal_trainer/PT2.jpg"
-                alt="Fitnesswork"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary"></div>
-            </div>
-            <div className="xl:absolute top-0 bottom-0 left-0 right-0">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">
-                    PROFESSIONAL PERSONAL TRAINER
-                  </h2>
-                  <p>
-                    If you want real result, progressive and personalised
-                    exercise, we recommend you to choose this program. Our
-                    professional Personal Trainer will guide you to your body
-                    goals. Want to know more? Click View More
-                  </p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/personal-trainer" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative bg-blue-primary">
-            <div className="relative h-72 xl:h-full">
-              <img
-                src="/image/home/Photo_classes.jpg"
-                alt="Fitnesswork"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary"></div>
-            </div>
-            <div className="xl:absolute top-0 bottom-0 left-0 right-0">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">
-                    FUN FITNESS CLASS WITH CERTIFIED INSTRUCTOR
-                  </h2>
-                  <p>
-                    If you like group exercise, fun, and various activities then
-                    you should booking our class. Know more our classes based on
-                    your fitness goals, click link on the right
-                  </p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/workouts" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative bg-blue-primary">
-            <div className="relative h-72 xl:h-full">
-              <img
-                src="/image/home/News_Example_2.jpg"
-                alt="Fitnesswork"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary"></div>
-            </div>
-            <div className="xl:absolute top-0 bottom-0 left-0 right-0">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">
-                    ONLINE WORKOUTS
-                  </h2>
-                  <p>
-                    Didn’t have access to nearby gym ? Worry no more! With our
-                    online class, you can choose exercise You want. Exercise
-                    everywhere, stay safe, stay fun and Stay healthy. Get the
-                    membership Now !
-                  </p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/online-class" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative bg-blue-primary">
-            <div className="relative h-72 xl:h-full">
-              <img
-                src="/image/home/Photo_pt.jpg"
-                alt="Fitnesswork"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-blue-primary"></div>
-            </div>
-            <div className="xl:absolute top-0 bottom-0 left-0 right-0">
-              <div className="text-white text-xs xl:text-sm grid md:flex justify-between items-end h-full mx-4 xl:mx-8 pb-8">
-                <div className="mr-8">
-                  <h2 className="font-judul text-2xl text-yellow-primary mb-4">
-                    On-demand Video
-                  </h2>
-                  <p>
-                    Did you have crowded schedule? Need a flexible time to
-                    exercise yet still got the progress you want ? subscribe to
-                    our online streaming! exercise anytime, anywhere with
-                    professional guidance.
-                  </p>
-                </div>
-                <div className="min-w-fit flex items-end">
-                  <ButtonLink text="VIEW MORE" link="/on-demand" />
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="pt-6">
+        <h2 class="program-title">OUR PROGRAM</h2>
       </div>
-      </div> */}
+      <div class="program-section">
+        <div class="program-card">
+          <img
+            src="./image/falcon/Time1.png"
+            alt="The Falcon Training"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>THE FALCON TRAINING</h3>
+            <p>
+              Our training studios are judgment-free zones where people of all
+              shapes, sizes, and fitness levels are welcome. Whether you're a
+              seasoned athlete or just starting out on your fitness journey, we
+              have a place for you.
+            </p>
+          </div>
+          <img
+            src="./image/falcon/program-1.png"
+            alt="Falcon Training"
+            class="program-icon"
+          />
+        </div>
+
+        <div class="program-card">
+          <img
+            src="./image/falcon/U2pc.png"
+            alt="U2Pace Academy"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>U2PACE ACADEMY</h3>
+            <p>
+              Experience the thrill of cycling with Falcon Cycling club, where
+              every pedal stroke is fueled by excitement and community. We
+              welcome cyclists of all levels to join our energetic group rides
+              that make every ride memorable. Become part of a supportive
+              community that inspires you to ride further, faster, and with more
+              joy than ever before.
+            </p>
+          </div>
+          <img
+            src="./image/falcon/Vector.png"
+            alt="Falcon Cycling Club"
+            class="program-icon"
+          />
+        </div>
+
+        <div class="program-card">
+          <img
+            src="./image/falcon/Vector.png"
+            alt="Falcon Cycling Club"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>FALCON CYCLING CLUB</h3>
+            <p>
+              Your ultimate pathway to peak performance and personal excellence.
+              Tailored specifically to meet your unique fitness goals, our
+              program offers one-on-one coaching sessions designed to enhance
+              your strength, agility, and endurance.
+            </p>
+          </div>
+          <img
+            src="./image/falcon/Slide3.png"
+            alt="Falcon Cycling Club"
+            class="program-icon"
+          />
+        </div>
+        <div class="program-card">
+          <img
+            src="./image/falcon/Running.png"
+            alt="Falcon Running Club"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>FALCON RUNNING CLUB</h3>
+            <p>
+              Get ready for an exciting group running experience with Falcon Run
+              Club! Build your speed, strength, and endurance with our guided
+              sessions, no matter your level. From run/walkers to seasoned
+              runners, everyone is welcome!
+            </p>
+          </div>
+          <img
+            src="./image/falcon/Vector.png"
+            alt="Falcon Cycling Club"
+            class="program-icon"
+          />
+        </div>
+        <div class="button-container">
+          <button class="view-more-button">View More</button>
+        </div>
+      </div>
       <div className="md:flex md:justify-center md:items-center my-4">
         <div>
           <img
