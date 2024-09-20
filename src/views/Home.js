@@ -47,7 +47,8 @@ function Home() {
               <div className="text-red-primary my-4">
                 <div class="text-red-primary my-4">
                   <button
-                    onClick="window.open('https://presale.falconfitnessbox.id/', '_blank')"
+                    // onClick="window.open('https://presale.falconfitnessbox.id/', '_blank')"
+                    onClick={() => window.open('https://presale.falconfitnessbox.id/', '_blank')}
                     class="custom-button"
                   >
                     MORE INFO
