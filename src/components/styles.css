@@ -145,15 +145,27 @@
   border-radius: 10px;
 }
 
+.program-icon {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.program-right-img {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .program-details {
-  width: 45%;
-  padding: 10px;
+  margin: 0 20px;
+  text-align: left;
 }
 
 .program-details h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
   color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
   /* Yellow heading */
 }
 

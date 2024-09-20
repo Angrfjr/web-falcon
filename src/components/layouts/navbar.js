@@ -60,7 +60,7 @@ function Navbar() {
                     lg:absolute lg:group-hover:h-44 lg:min-w-max lg:-left-10 lg:text-left
                   "
                   >
-                    <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
+                    {/* <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
                       <NavLink onClick={hamburger} to="/workouts">
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           OUR PROGRAM
@@ -81,7 +81,7 @@ function Navbar() {
                           Virtual Class
                         </li>
                       </NavLink>
-                    </ul>
+                    </ul> */}
                   </div>
                 </li>
                 <li className="py-1.5 lg:px-3 group relative cursor-pointer">
@@ -91,7 +91,7 @@ function Navbar() {
                     lg:absolute lg:group-hover:h-36 lg:min-w-max lg:-left-10 lg:text-left
                   "
                   >
-                    <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
+                    {/* <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
                       <NavLink onClick={hamburger} to="/about">
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           About Us
@@ -107,19 +107,21 @@ function Navbar() {
                           Term & Condition
                         </li>
                       </NavLink>
-                    </ul>
+                    </ul> */}
                   </div>
                 </li>
                 {/* <NavLink onClick={hamburger} to="/article" className="lg:px-3">
                   <li className="py-1.5">Article</li>
                 </NavLink> */}
-                <NavLink onClick={hamburger} to="/shop" className="lg:px-3">
+                {/* <NavLink onClick={hamburger} to="/shop" className="lg:px-3"> */}
+                <NavLink onClick={hamburger} to="/" className="lg:px-3">
                   <li className="text-color-red py-1.5">Shop</li>
                 </NavLink>
                 {/* <NavLink onClick={hamburger} to="/privacy" className="lg:px-3">
                   <li className="py-1.5">Privasi</li>
                 </NavLink> */}
-                <NavLink onClick={hamburger} to="/privacy" className="lg:px-3">
+                {/* <NavLink onClick={hamburger} to="/privacy" className="lg:px-3"> */}
+                <NavLink onClick={hamburger} to="/" className="lg:px-3">
                   <li className="text-color-red py-1.5">Partnership</li>
                 </NavLink>
               </ul>

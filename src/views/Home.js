@@ -66,13 +66,13 @@ function Home() {
           />
         </div>
       </div>
-      <div class="pt-6">
+      {/* <div class="pt-6">
         <h2 class="program-title">OUR PROGRAM</h2>
       </div>
       <div class="program-section">
         <div class="program-card">
           <img
-            src="./image/falcon/Time1.png"
+            src="./image/falcon/Time workout.png"
             alt="The Falcon Training"
             class="program-icon"
           />
@@ -86,7 +86,7 @@ function Home() {
             </p>
           </div>
           <img
-            src="./image/falcon/program-1.png"
+            src="./image/falcon/A6301471 4.png"
             alt="Falcon Training"
             class="program-icon"
           />
@@ -94,7 +94,7 @@ function Home() {
 
         <div class="program-card">
           <img
-            src="./image/falcon/U2pc.png"
+            src="./image/falcon/U2 Pace Logo 2.png"
             alt="U2Pace Academy"
             class="program-icon"
           />
@@ -110,7 +110,7 @@ function Home() {
             </p>
           </div>
           <img
-            src="./image/falcon/Vector.png"
+            src="./image/falcon/Slide2.jpg.png"
             alt="Falcon Cycling Club"
             class="program-icon"
           />
@@ -118,7 +118,7 @@ function Home() {
 
         <div class="program-card">
           <img
-            src="./image/falcon/Vector.png"
+            src="./image/falcon/vector.png"
             alt="Falcon Cycling Club"
             class="program-icon"
           />
@@ -132,14 +132,14 @@ function Home() {
             </p>
           </div>
           <img
-            src="./image/falcon/Slide3.png"
+            src="./image/falcon/Slide2.jpg-1.png"
             alt="Falcon Cycling Club"
             class="program-icon"
           />
         </div>
         <div class="program-card">
           <img
-            src="./image/falcon/Running.png"
+            src="./image/falcon/Rectangle.png"
             alt="Falcon Running Club"
             class="program-icon"
           />
@@ -153,9 +153,104 @@ function Home() {
             </p>
           </div>
           <img
-            src="./image/falcon/Vector.png"
+            src="./image/falcon/Slide2.jpg-2.png"
             alt="Falcon Cycling Club"
             class="program-icon"
+          />
+        </div>
+        <div class="button-container">
+          <button class="view-more-button">View More</button>
+        </div>
+      </div> */}
+      <div class="pt-6">
+        <h2 class="program-title">OUR PROGRAM</h2>
+      </div>
+      <div class="program-section">
+        <div class="program-card">
+          <img
+            src="./image/falcon/Time workout.png"
+            alt="The Falcon Training"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>THE FALCON TRAINING</h3>
+            <p>
+              Our training studios are judgment-free zones where people of all
+              shapes, sizes, and fitness levels are welcome. Whether you're a
+              seasoned athlete or just starting out on your fitness journey, we
+              have a place for you.
+            </p>
+          </div>
+          <img
+            src="./image/falcon/A6301471 4.png"
+            alt="Falcon Training"
+            class="program-right-img"
+          />
+        </div>
+
+        <div class="program-card">
+          <img
+            src="./image/falcon/U2 Pace Logo 2.png"
+            alt="U2Pace Academy"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>U2PACE ACADEMY</h3>
+            <p>
+              Experience the thrill of cycling with Falcon Cycling club, where
+              every pedal stroke is fueled by excitement and community. We
+              welcome cyclists of all levels to join our energetic group rides
+              that make every ride memorable.
+            </p>
+          </div>
+          <img
+            src="./image/falcon/Slide2.jpg.png"
+            alt="Falcon Cycling Club"
+            class="program-right-img"
+          />
+        </div>
+
+        <div class="program-card">
+          <img
+            src="./image/falcon/vector.png"
+            alt="Falcon Cycling Club"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>FALCON CYCLING CLUB</h3>
+            <p>
+              Your ultimate pathway to peak performance and personal excellence.
+              Tailored specifically to meet your unique fitness goals, our
+              program offers one-on-one coaching sessions designed to enhance
+              your strength, agility, and endurance.
+            </p>
+          </div>
+          <img
+            src="./image/falcon/Slide2.jpg-1.png"
+            alt="Falcon Cycling Club"
+            class="program-right-img"
+          />
+        </div>
+
+        <div class="program-card">
+          <img
+            src="./image/falcon/Rectangle.png"
+            alt="Falcon Running Club"
+            class="program-icon"
+          />
+          <div class="program-details">
+            <h3>FALCON RUNNING CLUB</h3>
+            <p>
+              Get ready for an exciting group running experience with Falcon Run
+              Club! Build your speed, strength, and endurance with our guided
+              sessions, no matter your level. From run/walkers to seasoned
+              runners, everyone is welcome!
+            </p>
+          </div>
+          <img
+            src="./image/falcon/Slide2.jpg-2.png"
+            alt="Falcon Running Club"
+            class="program-right-img"
           />
         </div>
         <div class="button-container">
