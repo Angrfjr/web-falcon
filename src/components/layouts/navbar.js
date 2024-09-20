@@ -128,9 +128,9 @@ function Navbar() {
             </div>
             <div className="sm:flex sm:justify-around lg:space-x-4 lg:min-w-max text-xl">
               <ButtonNav
-                toLink="/invesment"
+                toLink="//"
                 text="FIND FALCON NEAR YOU"
-                className="text-white py-2 px-4 rounded"
+                className="py-2 px-4 rounded"
               />
             </div>
           </div>
