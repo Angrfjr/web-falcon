@@ -168,11 +168,11 @@ function Footer() {
                 </p>
                 <p>Youtube</p>
 
-                <p>
+                {/* <p>
                   <NavLink onClick={scrollToTop} to="/tnc">
                     Term & Condition
                   </NavLink>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
