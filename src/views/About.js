@@ -4,135 +4,101 @@ import ButtonLink from "../components/ButtonLink";
 function About() {
   return (
     <div>
-      <div className="flex justify-center lg:max-h-screen overflow-hidden relative 2xl:container 2xl:mx-auto">
+      <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
-          src="/image/aboutUs/About_Us.jpg"
+          src="/image/aboutUs/about_us_falcon.png"
           alt="Fitnesswork Hero Page"
-          className="object-cover object-center min-w-min lg:min-w-full max-h-[60vh]"
+          className="object-cover object-center min-w-min lg:min-w-full max-h-[80vh]"
         />
       </div>
 
       <div className="container mx-auto max-w-2xl text-center my-8 text-blue-primary">
         <h1 className="text-color-red text-5xl py-4">FALCON FITNESS BOX</h1>
-        <p>
-          Discover a tech-driven workout experience <br></br> Dive into music & rythm<br></br>
+        <p className="text-color-red">
+          Discover a tech-driven workout experience <br></br> Dive into music &
+          rythm<br></br>
           #Igniteyourfire
         </p>
       </div>
-      <div className="my-4 lg:flex lg:justify-center lg:items-center lg:space-x-4 bg-neutral-100">
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <img
-            src="/image/workouts/Weight_loss.jpg"
-            alt="Fitnesswork"
-            className="w-full object-cover object-center"
-          />
-        </div>
-        <div className="px-4 grid items-center text-blue-primary">
-          <div className="max-w-xl mx-auto">
-            <h2 className="text-4xl font-judul">ABOUT US</h2>
-            <div className="my-4">
-              <p>
-                Fitnessworks is a new experience in fitness. we are the first
-                gym & fitness Centre with technology based, in Indonesia. with
-                technology we can provide high level facility & activity with
-                low-cost membership plan, so everyone can join & begin their
-                fitness journey. it is our mission to create fitness for
-                everyone.
+      <div className="3xl:container bg-red-falcon px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
+        <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
+          <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
+            <div className="container">
+              <p className="text-3xl">WHAT IS FALCON?</p>
+            </div>
+            <div className="container mx-auto px-4 py-8 max-w-4xl">
+              <p className="text-lg leading-relaxed mb-5">
+                Introducing Falcon Fitness Box, where science meets nightlife
+                for an unparalleled workout experience. Our cutting-edge fitness
+                studio leverages unique heart rate tracking technology to ensure
+                you achieve faster, safer results
+              </p>
+
+              <p className="text-lg leading-relaxed">
+                Imagine breaking a sweat under dynamic lighting effects and
+                heart-pumping music, all set within a vibrant nightclub
+                atmosphere. Perfect for fitness enthusiasts and tech-savvy
+                individuals alike, our innovative approach not only makes
+                working out effective but also incredibly fun. Join us at Falcon
+                Fitness Box to transform your fitness journey with the perfect
+                blend of science and excitement.
               </p>
             </div>
           </div>
         </div>
+        <div className="relative">
+          <div className="absolute h-full w-full bg-gradient-to-b md:bg-gradient-to-r"></div>
+          <img
+            src="image/aboutUs/nav_about.png"
+            alt="falcon"
+            className="object-cover object-center w-full h-full md:ml-auto max-w-8xl"
+          />
+        </div>
       </div>
 
-      <div className="container mx-auto max-w-2xl text-center my-8 text-blue-primary">
-        <h1 className="font-judul text-5xl py-4">
-          QUALITY, AFFORDABLE GYMS, & TRENDY DESIGN
-        </h1>
-        <p>
-          We’re committed to bringing high quality facilities, yet affordable
-          gyms to everyone. As we know high quality facilities isn’t enough. We
-          provide you with trendy design and instagramable. Our trendy design
-          keep you exist on your social media. Furthermore, our trendy design
-          will boosting your mood to exercise, which will support you to achieve
-          your fitness goals.
-        </p>
-      </div>
-      <div className="grid sm:grid-cols-2 xl:grid-cols-4 my-4">
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_1.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
+      <div className="container mx-auto px-4 py-8">
+        {/* Top row with two items */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="flex flex-col items-center text-center">
+            <div className="rounded-full overflow-hidden w-64 h-64 bg-red-600 mb-6">
+              <img
+                src="image/aboutUs/cutting_edge.png"
+                alt="Heart rate tracking"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-lg font-bold uppercase max-w-xs text-[#4A0404]">
+              CUTTING-EDGE FITNESS STUDIO WITH HEART RATE TRACKING TECHNOLOGY.
+            </h3>
           </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>
-              TIME BASED MEMBERShip, <br />
-              With various Pricing Plan
-            </h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              We created the first time based membership system, in Indonesia.
-              This system let you to choose how long you want to be in our club.
-              You only pay while you in our club. What price you want, what
-              exercise you need, what facility you get, all in your control,
-              packed with our Fitnessworks Apps.
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="MEMBERSHIP OPTION" link="/membership" />
+
+          <div className="flex flex-col items-center text-center">
+            <div className="rounded-full overflow-hidden w-64 h-64 bg-red-600 mb-6">
+              <img
+                src="image/aboutUs/red_box.png"
+                alt="Red box"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-lg font-bold uppercase max-w-xs text-[#4A0404]">
+              RED BOX: DYNAMIC LIGHTING EFFECTS & FIBRANT NIGHTCLUB ATMOSPHERE
+            </h3>
           </div>
         </div>
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_2.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
-          </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>
-              High quality & Trendy design <br />
-              gym & Classes
-            </h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              We realize, nowdays, high quality equipment & class isn’t enough.
-              Our trendy design will keep you exist on your social media.
-              Furthermore, our trendy design will boosting your mood to
-              exercise, which will support you to achieve your fitness goals.
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="FIND OUT MORE" link="/workouts" />
-          </div>
-        </div>
-        <div className="text-center my-4 space-y-4 relative pb-16">
-          <div>
-            <img
-              src="/image/home/Icon_4.png"
-              alt="FW Icon"
-              className="mx-auto w-28"
-            />
-          </div>
-          <div className="text-blue-primary font-BebasNeue text-2xl font-black">
-            <h2>
-              SUPPORTING YOUR HEALTH <br />
-              JOURNEY
-            </h2>
-          </div>
-          <div className="max-w-xs mx-auto py-4">
-            <p>
-              Whether it’s support from a Personal Trainer, your expert Gym
-              Team, our app, help is always at hand.
-            </p>
-          </div>
-          <div className="flex justify-center absolute bottom-0 right-0 left-0">
-            <ButtonLink text="FIND OUT MORE" link="/contact-us" />
+
+        {/* Bottom row with single centered item */}
+        <div className="flex justify-center">
+          <div className="flex flex-col items-center text-center">
+            <div className="rounded-full overflow-hidden w-64 h-64 bg-red-600 mb-6">
+              <img
+                src="image/aboutUs/sauna.png"
+                alt="Infrared sauna"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-lg font-bold uppercase max-w-xs text-[#4A0404]">
+              RECOVERY AREA: INFRARED SAUNA
+            </h3>
           </div>
         </div>
       </div>
