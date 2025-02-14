@@ -8,7 +8,7 @@ function About() {
         <img
           src="/image/aboutUs/about_us_falcon.png"
           alt="Fitnesswork Hero Page"
-          className="object-cover object-center min-w-min lg:min-w-full max-h-[80vh]"
+          className="object-cover object-center min-w-min lg:min-w-full max-h-[50vh]"
         />
       </div>
 

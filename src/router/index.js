@@ -18,6 +18,7 @@ import News3 from '../views/article/News3';
 import News4 from '../views/article/News4';
 import News5 from '../views/article/News5';
 import Privacy  from '../views/Privacy';
+import Partnership  from '../views/Partnership';
 
 import Shop from '../views/Shop';
 import Tnc from '../views/Tnc';
@@ -55,6 +56,7 @@ import FormFreeTrial from '../views/FormFreeTrial';
 import AppLayoutTimeTable from '../components/AppLayoutTimeTable';
 import TimeTable from '../views/TimeTable';
 import OnlineClasses from '../views/OnlineClasses';
+import Near from '../views/Near';
 
 // function WorkoutsLayout() {
   
@@ -75,7 +77,9 @@ function Router(props) {
           <Route path='news5' element={<News5 />} />
         </Route>
         <Route path="shop" element={<Shop />} />
+        <Route path="near" element={<Near />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route path="partnership" element={<Partnership />} />
         <Route path="membership-form" element={<MembershipForm />} />
         <Route path="fitnessworks-apps" element={<FitnessworksApps />} />
         <Route path="contact-us" element={<ContactUs />} />

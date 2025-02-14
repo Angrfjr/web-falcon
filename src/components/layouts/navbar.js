@@ -52,15 +52,18 @@ function Navbar() {
                 <NavLink onClick={hamburger} to="/" className="lg:px-3">
                   <li className="text-color py-1.5">Home</li>
                 </NavLink>
+                <NavLink onClick={hamburger} to="/workouts" className="lg:px-3">
+                  <li className="text-color-red py-1.5">WorkOuts</li>
+                </NavLink>
 
-                <li className="py-1.5 lg:px-3 group relative cursor-pointer">
+                {/* <li className="py-1.5 lg:px-3 group relative cursor-pointer">
                   <p className="text-color-red">WorkOuts</p>
                   <div
                     className="h-0 group-hover:h-[135px] overflow-hidden transition-all duration-300
                     lg:absolute lg:group-hover:h-44 lg:min-w-max lg:-left-10 lg:text-left
                   "
                   >
-                    {/* <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
+                    <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
                       <NavLink onClick={hamburger} to="/workouts">
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           OUR PROGRAM
@@ -81,17 +84,20 @@ function Navbar() {
                           Virtual Class
                         </li>
                       </NavLink>
-                    </ul> */}
+                    </ul>
                   </div>
-                </li>
-                <li className="py-1.5 lg:px-3 group relative cursor-pointer">
+                </li> */}
+                <NavLink onClick={hamburger} to="/about" className="lg:px-3">
+                  <li className="text-color-red py-1.5">About</li>
+                </NavLink>
+                {/* <li className="py-1.5 lg:px-3 group relative cursor-pointer">
                   <p className="text-color-red">About</p>
                   <div
                     className="h-0 group-hover:h-[105px] overflow-hidden transition-all duration-300
                     lg:absolute lg:group-hover:h-36 lg:min-w-max lg:-left-10 lg:text-left
                   "
                   >
-                    {/* <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
+                    <ul className="bg-red-falcon mt-2 lg:text-white lg:p-4 lg:rounded-xl">
                       <NavLink onClick={hamburger} to="/about">
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           About Us
@@ -107,28 +113,28 @@ function Navbar() {
                           Term & Condition
                         </li>
                       </NavLink>
-                    </ul> */}
+                    </ul>
                   </div>
-                </li>
+                </li> */}
                 {/* <NavLink onClick={hamburger} to="/article" className="lg:px-3">
                   <li className="py-1.5">Article</li>
                 </NavLink> */}
-                {/* <NavLink onClick={hamburger} to="/shop" className="lg:px-3"> */}
-                <NavLink onClick={hamburger} to="/" className="lg:px-3">
+                <NavLink onClick={hamburger} to="/shop" className="lg:px-3">
+                  {/* <NavLink onClick={hamburger} to="/" className="lg:px-3"> */}
                   <li className="text-color-red py-1.5">Shop</li>
                 </NavLink>
                 {/* <NavLink onClick={hamburger} to="/privacy" className="lg:px-3">
                   <li className="py-1.5">Privasi</li>
                 </NavLink> */}
-                {/* <NavLink onClick={hamburger} to="/privacy" className="lg:px-3"> */}
-                <NavLink onClick={hamburger} to="/" className="lg:px-3">
+                <NavLink onClick={hamburger} to="/partnership" className="lg:px-3">
+                {/* <NavLink onClick={hamburger} to="/" className="lg:px-3"> */}
                   <li className="text-color-red py-1.5">Partnership</li>
                 </NavLink>
               </ul>
             </div>
             <div className="sm:flex sm:justify-around lg:space-x-4 lg:min-w-max text-xl">
               <ButtonNav
-                toLink="//"
+                toLink="/near"
                 text="FIND FALCON NEAR YOU"
                 className="py-2 px-4 rounded"
               />

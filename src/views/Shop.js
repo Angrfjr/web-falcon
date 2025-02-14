@@ -1,32 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ButtonLink from "../components/ButtonLink";
 
 function Shop() {
-
-  const currency = new Intl.NumberFormat(['id']);
+  const currency = new Intl.NumberFormat(["id"]);
 
   const [getDuration] = useState([
-    {id: 1, month: "12 Month", rp: 318},
-    {id: 2, month: "6 Month", rp: 318},
-    {id: 3, month: "3 Month", rp: 318},
-    {id: 4, month: "1 Month", rp: 318}
-  ])
+    { id: 1, month: "12 Month", rp: 318 },
+    { id: 2, month: "6 Month", rp: 318 },
+    { id: 3, month: "3 Month", rp: 318 },
+    { id: 4, month: "1 Month", rp: 318 },
+  ]);
 
   const [getPt] = useState([
-    {id: 1, session: "60", rp: 600000},
-    {id: 2, session: "24", rp: 600000},
-    {id: 3, session: "12", rp: 600000},
-    {id: 4, session: "6", rp: 600000}
-  ])
-
+    { id: 1, session: "60", rp: 600000 },
+    { id: 2, session: "24", rp: 600000 },
+    { id: 3, session: "12", rp: 600000 },
+    { id: 4, session: "6", rp: 600000 },
+  ]);
 
   return (
     <div>
-      <div className="lg:max-h-screen relative">
-        <img src="/image/shop/Header_Store.jpg" alt="Fitnesswork Presentation" className="object-cover object-center max-h-72 w-full"/>
-        {/* <div className="text-center h-24 bg-blue-primary flex items-center">
-          <h1 className="font-judul text-4xl text-center text-white mx-auto">PRICING PLAN MEMBERSHIP</h1>
-        </div> */}
+      <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
+        <img
+          src="/image/home/shop/nav_shop.png"
+          alt="Fitnesswork Hero Page"
+          className="object-cover object-center min-w-min lg:min-w-full max-h-[50vh]"
+        />
+        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-md mx-auto text-white text-center">
+          <h1 className="font-white text-4xl sm:text-7xl">SHOP</h1>
+        </div>
       </div>
 
       {/* <div className="lg:grid lg:grid-cols-2">
@@ -135,23 +138,128 @@ function Shop() {
       </div>
        */}
       <div className="bg-neutral-100">
-        <div className="bg-red-falcon text-center h-24 flex items-center">
-          <h1 className="text-wite text-4xl text-center text-white mx-auto">PRICING PLAN MEMBERSHIP</h1>
-        </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 container mx-auto my-4">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 container mx-auto my-4">
           <div className="m-4">
             <div className="relative w-max mx-auto">
-              <img src="/image/home/Gym_bag.jpg" alt="Shop" className="max-w-xs mx-auto"/>
+              <img
+                src="/image/home/shop/clothes.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              {/* <p className="text-color-red text-center">T-FALCON</p>
+              <p className="text-color-red text-center">Rp. 50.000</p>
+              <div className="flex justify-center">
+                <ButtonLink text="CHECK OUT" link="weight-lost" />
+              </div> */}
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  T-FALCON
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
+              </div>
             </div>
           </div>
           <div className="m-4">
             <div className="relative w-max mx-auto">
-              <img src="/image/home/Slaves_yellow.jpg" alt="Shop" className="max-w-xs mx-auto"/>
+              <img
+                src="/image/home/shop/boottle.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  Falcon Drink Bottle
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
+              </div>
             </div>
           </div>
           <div className="m-4">
             <div className="relative w-max mx-auto">
-              <img src="/image/home/Gym_bag_2.jpg" alt="Shop" className="max-w-xs mx-auto"/>
+              <img
+                src="/image/home/shop/tweltll.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  TOWEL
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
+              </div>
+              {/* <div className="absolute top-0 left-0 pt-4 pl-4">
+                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
+              </div> */}
+            </div>
+          </div>
+          <div className="m-4">
+            <div className="relative w-max mx-auto">
+              <img
+                src="/image/home/shop/clothes_2.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  Falcon crewneck
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="m-4">
+            <div className="relative w-max mx-auto">
+              <img
+                src="/image/home/shop/watch.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  MZ-3 Heart rate monitor
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
+              </div>
               <div className="absolute top-0 left-0 pt-4 pl-4">
                 <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
               </div>
@@ -159,58 +267,123 @@ function Shop() {
           </div>
           <div className="m-4">
             <div className="relative w-max mx-auto">
-              <img src="/image/home/Tshirt.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Mini_towel.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-              <div className="absolute top-0 left-0 pt-4 pl-4">
-                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
+              <img
+                src="/image/home/shop/myzone.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  MZ-Switch Heart rate monitor
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
               </div>
             </div>
           </div>
           <div className="m-4">
             <div className="relative w-max mx-auto">
-              <img src="/image/home/Yoga_mat.jpg" alt="Shop" className="max-w-xs mx-auto"/>
+              <img
+                src="/image/home/shop/bag.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  F-GYM BAG
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
+              </div>
             </div>
           </div>
           <div className="m-4">
             <div className="relative w-max mx-auto">
-              <img src="/image/home/Gym_bag.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Slaves_yellow.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Gym_bag_2.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-              <div className="absolute top-0 left-0 pt-4 pl-4">
-                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
+              <img
+                src="/image/home/shop/hat.png"
+                alt="Shop"
+                className="max-w-xs mx-auto"
+              />
+              <div className="space-y-2 mb-4">
+                <h3 className="text-red-700 text-xl font-semibold text-center">
+                  Falcon CAP
+                </h3>
+                <p className="text-red-700 text-lg font-medium text-center">
+                  Rp. 50.000
+                </p>
+              </div>
+
+              <div className="relative">
+                <button className="w-full bg-white text-red-700 font-semibold py-2 px-6 rounded-full border-2 border-red-700 hover:bg-red-700 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <span>CHECK OUT</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container py-4">
-        <h1 className="font-judul text-blue-primary text-4xl text-center">Available Payment</h1>
-        <div className="flex flex-wrap justify-around items-center py-4 lg:px-10">
-          <img src="/image/shop/logoBank/BNI.png" alt="BUSINESS SUPPORT" className="h-20"/>
-          <img src="/image/shop/logoBank/BRI.png" alt="BUSINESS SUPPORT" className="h-20"/>
-          <img src="/image/shop/logoBank/Gopay.png" alt="BUSINESS SUPPORT" className="h-20"/>
-          <img src="/image/shop/logoBank/Mandiri.png" alt="BUSINESS SUPPORT" className="h-20"/>
-          <img src="/image/shop/logoBank/Permata.png" alt="BUSINESS SUPPORT" className="h-20"/>
-          <img src="/image/shop/logoBank/ShopeePay.png" alt="BUSINESS SUPPORT" className="h-20"/>
-          <img src="/image/shop/logoBank/Visa.png" alt="BUSINESS SUPPORT" className="h-20"/>
+      <div className="lg:flex lg:justify-center lg:items-center my-4 lg:container mx-auto">
+        <div>
+          <img
+            src="/image/falcon/falcon-app.png"
+            alt="Mobile App Fitness Works"
+            className="max-w-lg mx-auto"
+          />
+        </div>
+        <div className="container mx-auto lg:mx-0 text-blue-primary py-8 lg:max-w-2xl">
+          <h2 className="text-color-red font-BebasNeue font-black text-4xl mb-4">
+            DOWNLOAD NOW!
+          </h2>
+          <div className="text-color-red">
+            <p>
+              Our great new features ensure you’re able to manage your
+              membership from the palm of your hand.
+            </p>
+            <br />
+            <p>- Contactless entry to the gym through the app</p>
+            <p>- Book Into your favourite classes</p>
+            <p>
+              - Manage your membership from changing your gym to updating
+              payment details
+            </p>
+            <p>
+              - Access to your training journey, challenges, class schedules,
+              and community platform
+            </p>
+          </div>
+          <button className="mt-4 border py-1">
+            <img
+              src="/image/aboutUs/button-google-play.png"
+              alt="Mobile App Fitness Works"
+              className="h-12 mx-2"
+            />
+          </button>
+          <button className="mt-4 border py-1">
+            <img
+              src="/image/aboutUs/button-app-store.png"
+              alt="Mobile App Fitness Works"
+              className="h-12 mx-2"
+            />
+          </button>
         </div>
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Shop
+export default Shop;

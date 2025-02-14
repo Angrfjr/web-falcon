@@ -49,6 +49,9 @@ function TimeTable() {
               </td>
             </tr>
             <tr>
+            <img className="h-20 p-2 mx-auto" src="/image/logo_kelas/BodyCombat.png" alt="Class"/>
+            </tr>
+            {/* <tr>
               <td colSpan="7">
                 <div className="grid grid-cols-7">
                   <div>
@@ -151,7 +154,7 @@ function TimeTable() {
                   </div>
                 </div>
               </td>
-            </tr>
+            </tr> */}
             <tr className="h-14">
               <td colSpan="7" >
                 <div className="mx-1 border-b-2 border-yellow-primary relative">

@@ -79,6 +79,15 @@
   color: #530202;
 }
 
+.center {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+}
+
 .custom-button {
   border: 2px solid red;
   /* Red border */
@@ -207,4 +216,86 @@
 .view-more-button:hover {
   background-color: white;
   color: #aa0000;
+}
+
+
+/*
+* Responsive design for small screens (mobile devices)
+*/
+
+.slideshow-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 700px;
+  /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.slide {
+  width: 80%;
+  /* Lebar slide utama */
+  height: max-h;
+  opacity: 0;
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide.active {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide.prev {
+  transform: translateX(-100%);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.slide.next {
+  transform: translateX(100%);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.slide.hidden {
+  transform: translateX(-200%);
+  opacity: 0;
+  z-index: 0;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.navigation button {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 459px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation button:hover {
+  background-color: #aaa;
+}
+
+.line {
+  width: 50px;
+  /* Panjang garis */
+  height: 2px;
+  /* Ketebalan garis */
+  background-color: #530202;
+  /* Warna garis */
+
 }

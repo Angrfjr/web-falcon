@@ -7,7 +7,7 @@ function Home() {
     <div>
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
-          src="/image/falcon/bg-home-about.png"
+          src="/image/falcon/bg-home-about.jpeg"
           alt="Falcon Hero Page"
           className="object-cover object-center min-w-min lg:min-w-full max-h-[80vh]"
         />

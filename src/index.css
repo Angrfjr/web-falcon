@@ -71,6 +71,12 @@ code {
   color : #530202;
 }
 
+.font-white {
+  @apply font-BebasNeue tracking-wide;
+  color : #ffffff;
+}
+
+
 .btn-active {
   @apply border-b-2 border-yellow-primary text-blue-primary
 }
