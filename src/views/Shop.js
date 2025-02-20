@@ -137,7 +137,7 @@ function Shop() {
         </div>
       </div>
        */}
-      <div className="bg-neutral-100">
+      <div className="bg-white">
         <div className="grid md:grid-cols-2 xl:grid-cols-4 container mx-auto my-4">
           <div className="m-4">
             <div className="relative w-max mx-auto">
@@ -151,8 +151,8 @@ function Shop() {
               <div className="flex justify-center">
                 <ButtonLink text="CHECK OUT" link="weight-lost" />
               </div> */}
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   T-FALCON
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -174,8 +174,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   Falcon Drink Bottle
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -197,8 +197,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   TOWEL
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -223,8 +223,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   Falcon crewneck
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -246,8 +246,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   MZ-3 Heart rate monitor
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -272,8 +272,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   MZ-Switch Heart rate monitor
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -295,8 +295,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   F-GYM BAG
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">
@@ -318,8 +318,8 @@ function Shop() {
                 alt="Shop"
                 className="max-w-xs mx-auto"
               />
-              <div className="space-y-2 mb-4">
-                <h3 className="text-red-700 text-xl font-semibold text-center">
+              <div className="space-y-2 mt-3 mb-4">
+                <h3 className="text-[#530202] text-xl font-semibold text-center">
                   Falcon CAP
                 </h3>
                 <p className="text-red-700 text-lg font-medium text-center">

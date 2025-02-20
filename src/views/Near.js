@@ -4,389 +4,6 @@ import ButtonLink from "../components/ButtonLink";
 import { MapPin } from "lucide-react";
 
 function Near() {
-  // Data schedule dengan pola acak
-  const scheduleData = [
-    {
-      time: "06:30 - 07:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "07:30 - 08:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "ENERGIZING",
-          logo: "/image/class/energiz.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "SCULPT",
-          logo: "/image/class/sculpt.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "08:30 - 09:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "ENERGIZING",
-          logo: "/image/class/energiz.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "SCULPT",
-          logo: "/image/class/sculpt.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "09:30 - 10:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "ENERGIZING",
-          logo: "/image/class/energiz.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "SCULPT",
-          logo: "/image/class/sculpt.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "15:00 - 16:00",
-      classes: [
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-    {
-      time: "15:00 - 16:00",
-      classes: [
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "U2PACE",
-          logo: "/image/class/pace.png",
-          bgColor: "bg-red-800",
-        },
-
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "17:30 - 18:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "18:30 - 19:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-
-    {
-      time: "19:30 - 20:30",
-      classes: [
-        {
-          name: "MUSCLE",
-          logo: "/image/class/muscle.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "AEROBIC",
-          logo: "/image/class/aerobic.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "BULLETPROF",
-          logo: "/image/class/bullet.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "UNITY",
-          logo: "/image/class/unity.png",
-          bgColor: "bg-red-900",
-        },
-        {
-          name: "POWER",
-          logo: "/image/class/power_flex.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-        {
-          name: "NO CLASS",
-          logo: "/image/class/no_class.png",
-          bgColor: "bg-red-800",
-        },
-      ],
-    },
-  ];
-
-  const days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
-
   const steps = [
     {
       number: "1/",
@@ -413,9 +30,9 @@ function Near() {
           alt="Fitnesswork Hero Page"
           className="object-cover object-center min-w-min lg:min-w-full max-h-[50vh]"
         />
-        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-md mx-auto text-white text-center">
-          <h1 className="font-white text-4xl sm:text-7xl">
-            find a falcon near you
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+          <h1 className="text-[96px] font-bold whitespace-nowrap">
+            FIND A FALCON NEAR YOU
           </h1>
         </div>
       </div>
@@ -453,74 +70,169 @@ function Near() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8">
-        <h2 className="text-center text-2xl font-bold mb-8">CLASS SCHEDULE</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-max border-collapse">
-            <thead>
-              <tr>
-                <th className="p-2 bg-red-950 text-color-red border border-red-900">
-                  Time
-                </th>
-                {days.map((day) => (
-                  <th
-                    key={day}
-                    className="p-2 bg-red-950 text-color-red border border-red-900"
-                  >
-                    {day}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {scheduleData.map((slot, idx) => (
-                <tr key={idx}>
-                  <td className="p-2 bg-red-950 text-color-red border border-red-900">
-                    {slot.time}
-                  </td>
-                  {slot.classes.map((classItem, classIdx) => (
-                    <td
-                      key={`${idx}-${classIdx}`}
-                      className="p-1 border border-red-900"
-                    >
-                      <div
-                        className={`${classItem.bgColor} p-8 min-h-[100px] flex flex-col items-center justify-center rounded`}
-                      >
-                        {classItem.logo ? (
-                          <img
-                            src={classItem.logo}
-                            alt={classItem.name}
-                            className="w-16 h-16 object-contain mb-2"
-                          />
-                        ) : null}
-                        <span className="text-white text-sm font-medium">
-                          {classItem.name}
-                        </span>
-                      </div>
-                    </td>
-                  ))}
-                </tr>
+      <div className="w-full max-w-[1799px] mx-auto mt-4"> {/* Tambah mt-16 untuk jarak lebih jauh */}
+        <div className="border-t-2 border-[#660000]"></div>
+      </div>
+
+      <h2 className="text-center text-[64px] font-bold mt-16 mb-6 text-[#660000]"> {/* Tambah mt-16 dan atur mb */}
+        CLASS SCHEDULE
+      </h2>
+
+      <div className="max-w-[1850px] mx-auto px-8 mt-8">
+        <div className="grid grid-cols-8 grid-rows-10 gap-4">
+          {/* Time Row */}
+          <div className="bg-[#660000] text-white text-[30px] text-center font-bold p-4">Time</div>
+          {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].map((day, idx) => (
+            <div key={idx} className="bg-[#660000] text-white text-[30px] text-center font-bold p-4">{day}</div>
+          ))}
+
+          {/* Time slots for each hour */}
+          {[
+            {
+              time: "06:30 - 07:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "07:30 - 08:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "ENERGIZING", logo: "/image/class/energiz.png", bgColor: "bg-red-800" },
+                { name: "SCULPT", logo: "/image/class/sculpt.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "08:30 - 09:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "ENERGIZING", logo: "/image/class/energiz.png", bgColor: "bg-red-800" },
+                { name: "SCULPT", logo: "/image/class/sculpt.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "09:30 - 10:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "ENERGIZING", logo: "/image/class/energiz.png", bgColor: "bg-red-800" },
+                { name: "SCULPT", logo: "/image/class/sculpt.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "15:00 - 16:00",
+              classes: [
+                { name: "U2PACE", logo: "/image/class/pace.png", bgColor: "bg-red-800" },
+                { name: "U2PACE", logo: "/image/class/pace.png", bgColor: "bg-red-800" },
+                { name: "U2PACE", logo: "/image/class/pace.png", bgColor: "bg-red-800" },
+                { name: "U2PACE", logo: "/image/class/pace.png", bgColor: "bg-red-800" },
+                { name: "U2PACE", logo: "/image/class/pace.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "17:30 - 18:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "18:30 - 19:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+              ],
+            },
+            {
+              time: "19:30 - 20:30",
+              classes: [
+                { name: "MUSCLE", logo: "/image/class/muscle.png", bgColor: "bg-red-800" },
+                { name: "AEROBIC", logo: "/image/class/aerobic.png", bgColor: "bg-red-900" },
+                { name: "BULLETPROF", logo: "/image/class/bullet.png", bgColor: "bg-red-800" },
+                { name: "UNITY", logo: "/image/class/unity.png", bgColor: "bg-red-900" },
+                { name: "POWER", logo: "/image/class/power_flex.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+                { name: "NO CLASS", logo: "/image/class/no_class.png", bgColor: "bg-red-800" },
+              ],
+            },
+            // Tambahkan data waktu lainnya di sini jika ada
+          ].map((slot, rowIdx) => (
+            <>
+              {/* Displaying time in two lines and centering */}
+              <div key={rowIdx} className="bg-white text-[#660000] text-[30px] border-2 border-[#660000] flex items-center justify-center p-4 font-semibold">
+                <div className="flex flex-col justify-center items-center">
+                  <div>{slot.time.split('-')[0]} - </div>
+                  <div>{slot.time.split('-')[1]}</div>
+                </div>
+              </div>
+
+              {/* Mengisi slot berdasarkan hari */}
+              {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].map((day, colIdx) => (
+                <div key={`${rowIdx}-${colIdx}`} className="p-0">
+                  <div className={`flex flex-col items-center ${slot.classes[colIdx].bgColor}`}>
+                    {/* Membuat kotak gambar sama besar dengan kotak jam */}
+                    <div className="w-full h-full relative">
+                      <img
+                        src={slot.classes[colIdx].logo}
+                        alt={slot.classes[colIdx].name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </>
+          ))}
         </div>
+      </div>
 
-        <div className="text-center mt-8 mb-12">
-          <button className="bg-red-600 text-white px-12 py-2 rounded-full hover:bg-red-700 transition-colors">
-            BOOK NOW
-          </button>
-        </div>
+      <div className="text-center text-[32px] mt-12 mb-12">
+        <button className="bg-white text-red-600 border-2 border-red-600 w-[376px] h-[85px] px-4 py-2 rounded-full hover:bg-red-600 hover:text-white transition-all">
+          BOOK NOW
+        </button>
+      </div>
 
+      <div className="max-w-[1840px] mx-auto px-8 mt-16">
         {/* Pricing Section */}
         <div className="mt-16">
-          <h2 className="text-center text-2xl font-bold mb-2">
+          <h2 className="text-center text-[64px] font-bold mb-2 text-[#660000]">
             PRICING MEMBERSHIP
           </h2>
-          <p className="text-center mb-8">Select to join</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <p className="text-center text-[32px] text-[#660000] mb-6">Select to join</p>
+          <br></br>
+          <div className="grid grid-cols-1 max-w-[1500px] md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto">
             {[
               {
-                price: "1.100.000",
+                price: "  1.100.000",
                 myzone: "/image/class/myzone.png",
                 months: 1,
                 bonus: "Myzone Heart Rate Tracker +Rp. 688.000,-",
@@ -543,40 +255,65 @@ function Near() {
                 months: 12,
                 bonus: "Free Myzone Heart Rate Tracker",
               },
-            ].map((plan, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg shadow">
-                <div className="text-xl font-bold text-white bg-menyala-falcon">
-                  Rp {plan.price}
-                  <div className="text-right font-normal">
-                    {plan.months}/month
+            ].map((plan, idx) => {
+              return (
+                <div key={idx} className="flex flex-col w-full max-w-xs mx-auto">
+                  <div className="bg-menyala-falcon text-white p-4 flex flex-col items-start">
+                    <div className="flex items-start w-full">
+                      <span className="text-[16px] font-medium mt-2 mr-1">Rp.</span>
+                      <span className="text-[45px] font-bold">{plan.price}</span>
+                    </div>
+                    <div className="text-[16px] text-right w-full mt-0">{plan.months}/month</div>
+                  </div>
+                  <div className="bg-[#F5F5F5] p-6 rounded-lg shadow">
+                    <ul className="space-y-4">
+                      <li className="flex items-start">
+                        <span className="text-2xl mr-2 text-[#660000]">&#9745;</span>
+                        <span className="text-justify text-[#660000]">Unlimited Class & Infrared Sauna Access</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-2xl mr-2 text-[#660000]">&#9745;</span>
+                        <span className="text-justify text-[#660000]">Free Falcon T-Shirt</span>
+                      </li>
+                      <li className="flex justify-center">
+                        <img src={plan.myzone} className="w-20 h-20" alt="MyZone" />
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-2xl mr-2 text-[#660000]">&#9745;</span>
+                        <span className="text-justify text-[#660000]">{plan.bonus}</span>
+                      </li>
+                    </ul>
+
+                    {/* Tombol View More */}
+                    <div className="flex justify-center mt-7">
+                      <button className="w-fit bg-white text-red-600 px-6 py-2 rounded-full border-2 border-red-600 hover:bg-red-600 hover:text-white transition-colors">
+                        VIEW MORE
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <ul className="space-y-2 mb-6">
-                  <li>• Unlimited Class & Infrared Sauna Access</li>
-                  <li>• Free Falcon T-Shirt</li>
-                  <li>
-                    <img src={plan.myzone} class="center"></img>
-                  </li>
-                  <li>• {plan.bonus}</li>
-                </ul>
-                <button className="w-full bg-white text-red-600 px-6 py-2 rounded-full border-2 border-red-600 hover:bg-red-600 hover:text-white transition-colors">
-                  VIEW MORE
-                </button>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto py-8">
-        <h2 className="text-3xl font-bold text-center mb-8 text-[#660000]">
+      <br></br>
+
+      <div className="w-full max-w-[1799px] mx-auto mt-4"> {/* Tambah mt-16 untuk jarak lebih jauh */}
+        <div className="border-t-2 border-[#660000]"></div>
+      </div>
+
+      <div className="w-full max-w-[1799px] mx-auto py-8">
+        <h2 className="text-[64px] font-bold text-center mb-8 text-[#660000]">
           GET STARTED
         </h2>
-        <div className="flex flex-wrap justify-between gap-4">
+
+        <div className="flex justify-center gap-24 max-w-7xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="flex items-start space-x-2">
-              <span className="text-[#660000] font-bold">{step.number}</span>
-              <span className="text-[#660000]">{step.title}</span>
+            <div key={index} className="flex items-center space-x-0 whitespace-nowrap mb-4">
+              <span className="text-[#660000] text-[28px] font-bold mr-2">{step.number}</span>
+              <span className="text-[#660000] text-[28px]">{step.title}</span>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import ButtonNav from "../buttonNav";
+import ButtonNav from "../ButtonNav";
 
 function Navbar() {
   

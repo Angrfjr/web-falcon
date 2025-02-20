@@ -67,197 +67,72 @@ function Home() {
           />
         </div>
       </div>
-      {/* <div class="pt-6">
-        <h2 class="program-title">OUR PROGRAM</h2>
-      </div>
-      <div class="program-section">
-        <div class="program-card">
-          <img
-            src="./image/falcon/Time workout.png"
-            alt="The Falcon Training"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>THE FALCON TRAINING</h3>
-            <p>
-              Our training studios are judgment-free zones where people of all
-              shapes, sizes, and fitness levels are welcome. Whether you're a
-              seasoned athlete or just starting out on your fitness journey, we
-              have a place for you.
-            </p>
-          </div>
-          <img
-            src="./image/falcon/A6301471 4.png"
-            alt="Falcon Training"
-            class="program-icon"
-          />
-        </div>
 
-        <div class="program-card">
-          <img
-            src="./image/falcon/U2 Pace Logo 2.png"
-            alt="U2Pace Academy"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>U2PACE ACADEMY</h3>
-            <p>
-              Experience the thrill of cycling with Falcon Cycling club, where
-              every pedal stroke is fueled by excitement and community. We
-              welcome cyclists of all levels to join our energetic group rides
-              that make every ride memorable. Become part of a supportive
-              community that inspires you to ride further, faster, and with more
-              joy than ever before.
-            </p>
-          </div>
-          <img
-            src="./image/falcon/Slide2.jpg.png"
-            alt="Falcon Cycling Club"
-            class="program-icon"
-          />
-        </div>
-
-        <div class="program-card">
-          <img
-            src="./image/falcon/vector.png"
-            alt="Falcon Cycling Club"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>FALCON CYCLING CLUB</h3>
-            <p>
-              Your ultimate pathway to peak performance and personal excellence.
-              Tailored specifically to meet your unique fitness goals, our
-              program offers one-on-one coaching sessions designed to enhance
-              your strength, agility, and endurance.
-            </p>
-          </div>
-          <img
-            src="./image/falcon/Slide2.jpg-1.png"
-            alt="Falcon Cycling Club"
-            class="program-icon"
-          />
-        </div>
-        <div class="program-card">
-          <img
-            src="./image/falcon/Rectangle.png"
-            alt="Falcon Running Club"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>FALCON RUNNING CLUB</h3>
-            <p>
-              Get ready for an exciting group running experience with Falcon Run
-              Club! Build your speed, strength, and endurance with our guided
-              sessions, no matter your level. From run/walkers to seasoned
-              runners, everyone is welcome!
-            </p>
-          </div>
-          <img
-            src="./image/falcon/Slide2.jpg-2.png"
-            alt="Falcon Cycling Club"
-            class="program-icon"
-          />
-        </div>
-        <div class="button-container">
-          <button class="view-more-button">View More</button>
-        </div>
-      </div> */}
       <div class="pt-6">
         <h2 class="program-title">OUR PROGRAM</h2>
       </div>
-      <div class="program-section">
-        <div class="program-card">
-          <img
-            src="./image/falcon/Time workout.png"
-            alt="The Falcon Training"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>THE FALCON TRAINING</h3>
-            <p>
-              Our training studios are judgment-free zones where people of all
-              shapes, sizes, and fitness levels are welcome. Whether you're a
-              seasoned athlete or just starting out on your fitness journey, we
-              have a place for you.
-            </p>
-          </div>
-          <img
-            src="./image/falcon/A6301471 4.png"
-            alt="Falcon Training"
-            class="program-right-img"
-          />
-        </div>
 
-        <div class="program-card">
-          <img
-            src="./image/falcon/U2 Pace Logo 2.png"
-            alt="U2Pace Academy"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>U2PACE ACADEMY</h3>
-            <p>
-              Experience the thrill of cycling with Falcon Cycling club, where
-              every pedal stroke is fueled by excitement and community. We
-              welcome cyclists of all levels to join our energetic group rides
-              that make every ride memorable.
-            </p>
-          </div>
-          <img
-            src="./image/falcon/Slide2.jpg.png"
-            alt="Falcon Cycling Club"
-            class="program-right-img"
-          />
+      <div className="bg-[#530202] text-white py-10 px-5 flex flex-col items-center">
+        <div className="flex flex-col items-center w-full">
+          {[
+            {
+              title: "THE FALCON TRAINING",
+              description:
+                "Our training studios are judgment-free zones where people of all shapes, sizes, and fitness levels are welcome. Whether you're a seasoned athlete or just starting out on your fitness journey, we have a place for you.",
+              icon: "./image/falcon/Time workout.png",
+              image: "./image/falcon/A6301471 4.png",
+            },
+            {
+              title: "U2PACE ACADEMY",
+              description:
+                "Experience the thrill of cycling with Falcon Cycling club, where every pedal stroke is fueled by excitement and community. We welcome cyclists of all levels to join our energetic group rides that make every ride memorable.",
+              icon: "./image/falcon/U2 Pace Logo 2.png",
+              image: "./image/falcon/Slide2.jpg.png",
+            },
+            {
+              title: "FALCON CYCLING CLUB",
+              description:
+                "Your ultimate pathway to peak performance and personal excellence. Tailored specifically to meet your unique fitness goals, our program offers one-on-one coaching sessions designed to enhance your strength, agility, and endurance.",
+              icon: "./image/falcon/vector.png",
+              image: "./image/falcon/Slide2.jpg-1.png",
+            },
+            {
+              title: "FALCON RUNNING CLUB",
+              description:
+                "Get ready for an exciting group running experience with Falcon Run Club! Build your speed, strength, and endurance with our guided sessions, no matter your level. From run/walkers to seasoned runners, everyone is welcome!",
+              icon: "./image/falcon/Rectangle.png",
+              image: "./image/falcon/Slide2.jpg-2.png",
+            },
+          ].map((program, index) => (
+            <div
+              key={index}
+              className="flex items-center p-5 w-[1741px] h-[272px] justify-center relative"
+            >
+              <img
+                src={program.icon}
+                alt={program.title}
+                className="w-56 h-auto object-cover mr-5"
+              />
+              <div className="flex-1 text-left">
+                <h3 className="text-[24px] font-bold mb-5">{program.title}</h3>
+                <p className="text-[24px]">{program.description}</p>
+              </div>
+              <div className="relative w-[600px] h-full">
+                <img
+                  src={program.image}
+                  alt={program.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {index < 3 && <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white"></div>}
+            </div>
+          ))}
         </div>
-
-        <div class="program-card">
-          <img
-            src="./image/falcon/vector.png"
-            alt="Falcon Cycling Club"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>FALCON CYCLING CLUB</h3>
-            <p>
-              Your ultimate pathway to peak performance and personal excellence.
-              Tailored specifically to meet your unique fitness goals, our
-              program offers one-on-one coaching sessions designed to enhance
-              your strength, agility, and endurance.
-            </p>
-          </div>
-          <img
-            src="./image/falcon/Slide2.jpg-1.png"
-            alt="Falcon Cycling Club"
-            class="program-right-img"
-          />
-        </div>
-
-        <div class="program-card">
-          <img
-            src="./image/falcon/Rectangle.png"
-            alt="Falcon Running Club"
-            class="program-icon"
-          />
-          <div class="program-details">
-            <h3>FALCON RUNNING CLUB</h3>
-            <p>
-              Get ready for an exciting group running experience with Falcon Run
-              Club! Build your speed, strength, and endurance with our guided
-              sessions, no matter your level. From run/walkers to seasoned
-              runners, everyone is welcome!
-            </p>
-          </div>
-          <img
-            src="./image/falcon/Slide2.jpg-2.png"
-            alt="Falcon Running Club"
-            class="program-right-img"
-          />
-        </div>
-        <div class="button-container">
-          <button class="view-more-button">View More</button>
+        <div className="flex justify-center mt-8">
+          <button className="custom-button">VIEW MORE</button>
         </div>
       </div>
+
       <div className="md:flex md:justify-center md:items-center my-4">
         <div>
           <img
@@ -320,7 +195,7 @@ function Home() {
         <div className="lg:flex justify-center">
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
             <div className="bg-menyala-falcon text-blue-primary text-center">
-              <h1 className="text-wite text-4xl py-4 font-BebasNeue tracking-wider">
+              <h1 className="text-white text-4xl py-4 font-BebasNeue font-black tracking-wider">
                 PRESALE
               </h1>
             </div>
@@ -369,7 +244,7 @@ function Home() {
           </div>
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
             <div className="bg-red-falcon text-yellow-primary text-center">
-              <h1 className="text-wite text-4xl py-4 font-BebasNeue font-black tracking-wider">
+              <h1 className="text-white text-4xl py-4 font-BebasNeue font-black tracking-wider">
                 PRESALE
               </h1>
             </div>
@@ -417,7 +292,7 @@ function Home() {
         <div className="lg:flex justify-center">
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
             <div className="bg-red-falcon text-blue-primary text-center">
-              <h1 className="text-wite text-4xl py-4 font-BebasNeue tracking-wider">
+              <h1 className="text-white text-4xl py-4 font-BebasNeue font-black tracking-wider">
                 PRESALE
               </h1>
             </div>
@@ -463,7 +338,7 @@ function Home() {
           </div>
           <div className="max-w-md w-full mx-auto lg:mx-8 my-8">
             <div className="bg-red-falcon text-yellow-primary text-center">
-              <h1 className="text-wite text-4xl py-4 font-BebasNeue font-black tracking-wider">
+              <h1 className="text-white text-4xl py-4 font-BebasNeue font-black tracking-wider">
                 PRESALE
               </h1>
             </div>
