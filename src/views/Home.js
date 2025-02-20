@@ -39,34 +39,34 @@ function Home() {
           <button className="custom-button">VIEW MORE</button>
         </div>
       </div>
-      <div className="3xl:container bg-red-falcon px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
-        <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
-          <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
-            <div className="container">
-              <p className="text-5xl">PRE-SALE STARTS OCTOBER 2024</p>
-              <div className="text-red-primary my-4">
-                <div class="text-red-primary my-4">
-                  <button
-                    // onClick="window.open('https://presale.falconfitnessbox.id/', '_blank')"
-                    onClick={() => window.open('https://presale.falconfitnessbox.id/', '_blank')}
-                    class="custom-button"
-                  >
-                    MORE INFO
-                  </button>
-                </div>
-              </div>
+
+      <div className="3xl:container bg-red-falcon px-0 md:max-h-96 relative overflow-hidden object-fill md:flex justify-center items-center">
+        {/* Kontainer teks */}
+        <div className="text-white w-full max-w-xl min-h-[13rem] flex justify-center items-center">
+          <div className="text-center">
+            <p className="text-5xl">PRE-SALE STARTS OCTOBER 2024</p>
+            <div className="text-red-primary my-4">
+              <button
+                onClick={() => window.open('https://presale.falconfitnessbox.id/', '_blank')}
+                className="custom-button"
+              >
+                MORE INFO
+              </button>
             </div>
           </div>
         </div>
-        <div className="relative">
+
+        {/* Kontainer Gambar */}
+        <div className="relative w-full flex justify-center items-center">
           <div className="absolute h-full w-full bg-gradient-to-b md:bg-gradient-to-r"></div>
           <img
             src="./image/falcon/bg-home-presale.png"
             alt="falcon"
-            className="object-cover object-center w-full h-full md:ml-auto max-w-8xl"
+            className="object-cover object-center w-full h-full max-w-8xl"
           />
         </div>
       </div>
+
 
       <div class="pt-6">
         <h2 class="program-title">OUR PROGRAM</h2>
