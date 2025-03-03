@@ -13,6 +13,10 @@ module.exports = {
         'yellow-primary': '#FECA2F',
         'blue-primary': '#190F40',
       },
+      screens: {
+        'xs': '480px',
+        '2xl': '1536px',
+      },
     },
     fontFamily: {
       'BebasNeue': ['BebasNeue', 'sans-serif'],

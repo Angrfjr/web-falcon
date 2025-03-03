@@ -93,7 +93,7 @@ function Home() {
               title: "FALCON CYCLING CLUB",
               description:
                 "Your ultimate pathway to peak performance and personal excellence. Tailored specifically to meet your unique fitness goals, our program offers one-on-one coaching sessions designed to enhance your strength, agility, and endurance.",
-              icon: "./image/falcon/vector.png",
+              icon: "./image/falcon/Vector.png",
               image: "./image/falcon/Slide2.jpg-1.png",
             },
             {

@@ -13,12 +13,7 @@ function Navbar() {
 
   return (
     <div className="tracking-wider overflow-visible">
-      <div
-        className="font-BebasNeue text-blue-primary overflow-visible
-        lg:container lg:px-2 lg:w-full lg:flex lg:justify-between lg:items-center lg:my-1
-        relative
-      "
-      >
+      <div className="font-BebasNeue text-blue-primary overflow-visible lg:container lg:px-2 lg:w-full lg:flex lg:justify-between lg:items-center lg:my-1 relative">
         <div className="flex justify-center items-center py-2 relative h-14 lg:h-12">
           <img
             src="/image/falcon/logo-falcon-header.png"
@@ -39,11 +34,8 @@ function Navbar() {
             </button>
           </div>
         </div>
-        <div
-          className="w-full absolute menu-close overflow-hidden transition-all ease-in duration-300
-          lg:static lg:h-full lg:overflow-visible z-50
-          bg-gradient-to-b from-white lg:from-transparent 
-        "
+        <div 
+          className="w-full absolute menu-close overflow-hidden transition-all ease-in duration-300 lg:static lg:h-full lg:overflow-visible z-50 bg-gradient-to-b from-white lg:from-transparent"
           id="menu"
         >
           <div className="lg:flex lg:justify-between">
@@ -127,7 +119,7 @@ function Navbar() {
                   <li className="py-1.5">Privasi</li>
                 </NavLink> */}
                 <NavLink onClick={hamburger} to="/partnership" className="lg:px-3">
-                {/* <NavLink onClick={hamburger} to="/" className="lg:px-3"> */}
+                  {/* <NavLink onClick={hamburger} to="/" className="lg:px-3"> */}
                   <li className="text-color-red py-1.5">Partnership</li>
                 </NavLink>
               </ul>

@@ -6,10 +6,13 @@ function About() {
     <div>
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img
-          src="/image/aboutUs/about_us_falcon.png"
+          src="/image/aboutUs/about_us_falcon.jpg"
           alt="Fitnesswork Hero Page"
           className="object-cover object-center min-w-min lg:min-w-full max-h-[50vh]"
         />
+        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-md mx-auto text-white text-center">
+          <h1 className="font-white text-4xl sm:text-7xl">IGNITE YOUR FIRE</h1>
+        </div>
       </div>
 
       <div className="container mx-auto max-w-2xl text-center my-8 text-blue-primary">
@@ -20,39 +23,41 @@ function About() {
           #Igniteyourfire
         </p>
       </div>
-      <div className="3xl:container bg-red-falcon px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">
-        <div className="text-white w-full max-w-xl min-h-[13rem] relative md:static">
-          <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
-            <div className="container">
-              <p className="text-3xl">WHAT IS FALCON?</p>
-            </div>
-            <div className="container mx-auto px-4 py-8 max-w-4xl">
-              <p className="text-lg leading-relaxed mb-5">
-                Introducing Falcon Fitness Box, where science meets nightlife
-                for an unparalleled workout experience. Our cutting-edge fitness
-                studio leverages unique heart rate tracking technology to ensure
-                you achieve faster, safer results
-              </p>
 
-              <p className="text-lg leading-relaxed">
-                Imagine breaking a sweat under dynamic lighting effects and
-                heart-pumping music, all set within a vibrant nightclub
-                atmosphere. Perfect for fitness enthusiasts and tech-savvy
-                individuals alike, our innovative approach not only makes
-                working out effective but also incredibly fun. Join us at Falcon
-                Fitness Box to transform your fitness journey with the perfect
-                blend of science and excitement.
-              </p>
-            </div>
-          </div>
+      <div className="relative w-full h-[600px] md:h-96 flex items-center bg-[#530202]">
+        {/* Container untuk teks */}
+        <div className="relative z-10 text-white w-full md:w-1/2 px-12 py-16 flex flex-col justify-center">
+          <p className="text-3xl font-bold mb-6">WHAT IS FALCON?</p>
+          <p className="text-lg leading-relaxed mb-6">
+            Introducing Falcon Fitness Box, where science meets nightlife
+            for an unparalleled workout experience.
+            Our cutting-edge fitness studio leverages unique heart rate
+            tracking technology to ensure you achieve faster, safer results.
+          </p>
+          <p className="text-lg leading-relaxed">
+            Imagine breaking a sweat under dynamic lighting effects
+            and heart-pumping music, all set within a vibrant nightclub
+            atmosphere. Perfect for fitness enthusiasts and tech-savvy
+            individuals alike, our innovative approach not only makes
+            working out effective but also incredibly fun.
+            Join us at Falcon Fitness Box to transform your fitness journey
+            with the perfect blend of science and excitement.
+          </p>
         </div>
-        <div className="relative">
-          <div className="absolute h-full w-full bg-gradient-to-b md:bg-gradient-to-r"></div>
-          <img
-            src="image/aboutUs/nav_about.png"
-            alt="falcon"
-            className="object-cover object-center w-full h-full md:ml-auto max-w-8xl"
-          />
+
+        {/* Gambar dengan overlay merah */}
+        <div className="absolute right-0 top-0 h-full w-1/2 hidden md:block">
+          <div
+            className="absolute inset-0 bg-gradient-to-r from-[#530202]/100 via-[#530202]/40 to-transparent"
+          ></div>
+          <div
+            className="h-full w-full"
+            style={{
+              backgroundImage: "url('image/aboutUs/nav_about.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
         </div>
       </div>
 
@@ -102,35 +107,6 @@ function About() {
           </div>
         </div>
       </div>
-
-      {/* <div className="py-8">
-        <div className="grid md:grid-cols-2 max-w-max mx-auto">
-          <div className="relative group">
-            <img src="/image/home/Photo_classes.jpg" alt="Fitnesswork"/>
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-blue-primary bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <div className="max-w-sm text-center text-white tracking-wider">
-                <h2 className="font-BebasNeue text-2xl text-yellow-primary mb-4">Fitness Classes Included</h2>
-                <p>We’re making fitness fun with our exciting range of fitness classes.</p>
-                <div className="flex justify-center">
-                  <ButtonLink text="VIEW MORE" link="/workouts" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative group">
-            <img src="/image/home/Photo_pt.jpg" alt="Fitnesswork"/>
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-blue-primary bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <div className="max-w-sm text-center text-white tracking-wider">
-                <h2 className="font-BebasNeue text-2xl text-yellow-primary mb-4">OUR Personal TraiNER</h2>
-                <p>Wherever you are on your fitness journey, a personal trainer can help you reach your goals.</p>
-                <div className="flex justify-center">
-                  <ButtonLink text="VIEW MORE" link="/personal-trainer" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="lg:flex lg:justify-center lg:items-center my-4 lg:container mx-auto">
         <div>

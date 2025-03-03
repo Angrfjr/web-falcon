@@ -16,13 +16,15 @@ function Navbar() {
         <div className="flex justify-center items-center py-2 relative h-14 lg:h-12">
           <img src="/image/falcon/logo-falcon-header.png" alt="falcon" className="h-12 sm:h-12 flex-none" />
           <div className="absolute right-0 top-0 bottom-0 mr-3 flex items-center lg:hidden">
-            <button
-              onClick={toggleMenu}
-              className={`bg-menyala-falcon text-white p-2 rounded ${isMenuOpen ? "hamburger-active" : ""}`}
-            >
-              ☰
+            <button onClick={toggleMenu} className="p-2 rounded">
+              <div className={`hamburger ${isMenuOpen ? "hamburger-active" : ""}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </button>
           </div>
+
         </div>
 
         {/* Menu Navbar */}
@@ -33,7 +35,7 @@ function Navbar() {
           <div className="lg:flex lg:justify-between">
             <div className="flex justify-center items-center text-center lg:w-full lg:font-black text-xl tracking-wider">
               <ul className="lg:flex lg:space-x-2 xl:space-x-4 flex flex-col lg:flex-row">
-                {[ 
+                {[
                   { name: "Home", path: "/" },
                   { name: "Workouts", path: "/workouts" },
                   { name: "About", path: "/about" },

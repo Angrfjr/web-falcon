@@ -1,0 +1,432 @@
+const scheduleData = [
+    {
+      time: "06:30 - 07:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "07:30 - 08:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "ENERGIZING",
+          logo: "/image/class/energiz.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "SCULPT",
+          logo: "/image/class/sculpt.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "08:30 - 09:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "ENERGIZING",
+          logo: "/image/class/energiz.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "SCULPT",
+          logo: "/image/class/sculpt.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "09:30 - 10:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "ENERGIZING",
+          logo: "/image/class/energiz.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "SCULPT",
+          logo: "/image/class/sculpt.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "15:00 - 16:00",
+      classes: [
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+    {
+      time: "15:00 - 16:00",
+      classes: [
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "U2PACE",
+          logo: "/image/class/pace.png",
+          bgColor: "bg-red-800",
+        },
+
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "17:30 - 18:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "18:30 - 19:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+
+    {
+      time: "19:30 - 20:30",
+      classes: [
+        {
+          name: "MUSCLE",
+          logo: "/image/class/muscle.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "AEROBIC",
+          logo: "/image/class/aerobic.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "BULLETPROF",
+          logo: "/image/class/bullet.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "UNITY",
+          logo: "/image/class/unity.png",
+          bgColor: "bg-red-900",
+        },
+        {
+          name: "POWER",
+          logo: "/image/class/power_flex.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+        {
+          name: "NO CLASS",
+          logo: "/image/class/no_class.png",
+          bgColor: "bg-red-800",
+        },
+      ],
+    },
+  ];
+
+  const days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+
+  <h2 className="text-center text-[50px] font-bold mb-8 text-[#660000]">CLASS SCHEDULE</h2>
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-max border-collapse">
+            <thead>
+              <tr>
+                <th className="p-2 bg-red-950 text-color-red border border-red-900">
+                  Time
+                </th>
+                {days.map((day) => (
+                  <th
+                    key={day}
+                    className="p-2 bg-red-950 text-color-red border border-red-900"
+                  >
+                    {day}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {scheduleData.map((slot, idx) => (
+                <tr key={idx}>
+                  <td className="p-2 bg-red-950 text-color-red border border-red-900">
+                    {slot.time}
+                  </td>
+                  {slot.classes.map((classItem, classIdx) => (
+                    <td
+                      key={`${idx}-${classIdx}`}
+                      className="p-1 border border-red-900"
+                    >
+                      <div
+                        className={`${classItem.bgColor} p-8 min-h-[100px] flex flex-col items-center justify-center rounded`}
+                      >
+                        {classItem.logo ? (
+                          <img
+                            src={classItem.logo}
+                            alt={classItem.name}
+                            className="w-16 h-16 object-contain mb-2"
+                          />
+                        ) : null}
+                        <span className="text-white text-sm font-medium">
+                          {classItem.name}
+                        </span>
+                      </div>
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
